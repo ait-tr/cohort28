@@ -2,5 +2,5 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-  "code": [""]
+  "code": ["code/src/VarCastingAppl.java", "code/src/OperationsAppl.java", "code/src/MethodAdvAppl.java"]
 }
