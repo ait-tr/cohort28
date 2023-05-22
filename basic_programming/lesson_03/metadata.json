@@ -2,5 +2,5 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-  "code": ["code/src/VarCastingAppl.java", "code/src/OperationsAppl.java", "code/src/MethodAdvAppl.java"]
+  "code": ["code/src/VarCastingAppl.java", "code/src/OperationsAppl.java", "code/src/MethodAdvAppl.java", "code/src/StackAppl.java"]
 }
