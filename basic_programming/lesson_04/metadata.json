@@ -2,5 +2,5 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-  "code": []
+  "code": ["code/src/AreaAppl.java", "code/src/ChoiceAppl.java", "code/src/CompareAppl.java"]
 }
