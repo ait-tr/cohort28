@@ -3,8 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
 
-  "code": ["code/src/AreaAppl.java", "code/src/ChoiceAppl.java", "code/src/CompareAppl.java"],
+  "code": [
+    "code/calculator/src/Main.java"
+  ]
 
-  "code": ["code/src/HWMinAppl.java", "code/src/ChoiceAppl.java", "code/src/SwitchCaseAppl.java"]
 
 }
