@@ -2,9 +2,8 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-
   "code": [
-    "code/calculator/src/Main.java"
+    "code/if-else/src/Main.java",
+    "code/switch-case/src/Main.java"
   ]
-
 }
