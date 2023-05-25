@@ -36,7 +36,7 @@ public class ChoiceAppl {
     public static double max(double x, double y){
         //  double res = x > y ? x : y;
         //  return res;
-        return x > y ? x : y;
+        return x > y ? x : y; // это тернарный опертор
     }
 
     public static double abs(double x) {
@@ -47,7 +47,7 @@ public class ChoiceAppl {
         return x > 0 ? 1 : (x < 0 ? -1 : 0);
     }
 
-    public static double min(double x, double y){
+    public static double min(double x, double y) {
         double x1, y1;
         // поменять знак у x и y
         x1 = - x;
