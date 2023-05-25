@@ -4,7 +4,10 @@
   "homework": "homework.md",
 
   "code": [
-    "code/calculator/src/Main.java"
+    "code/calculator/src/Main.java",
+    "code/while-practic/src/Main.java",
+    "code/while-practic/src/Main1.java",
+    "code/while-practic/src/Main2.java"
   ]
 
 }
