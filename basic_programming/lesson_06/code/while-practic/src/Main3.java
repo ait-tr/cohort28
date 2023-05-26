@@ -2,19 +2,29 @@ import java.util.Scanner;
 
 public class Main3 {
     public static void main(String[] args) {
-        System.out.println("Бегун>");
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Введите конечную цель ");
-        double target = scanner.nextDouble();
+//        В первый день спортсмен пробежал s километров, а затем он каждый день увеличивал пробег на 10 % от
+//        предыдущего значения. Определите номер дня, на который пробег спортсмена составит не менее target
+//        километров. Программа получает на вход действительные числа s и target и должна вывести одно
+//        натуральное число.
+
+        System.out.println("Бегун >>> (Runner)");
+        Scanner scanner = new Scanner(System.in); // включаем Scanner для чтения данных с клавиатуры
+
+        System.out.println("Введите конечную цель "); // приглашение пользователю
+        double target = scanner.nextDouble(); // считываем данные с клавиатуры
         System.out.println("Сколько вы пробежали сегодня? ");
-        double s = scanner.nextDouble() ;
+        double s = scanner.nextDouble() ; // считываем данные с клавиатуры
 
-        double day = 0 ;
+        int day = 0 ; // счетчик дней -  тип int
 
-        while (target > s){
-            s = s + (s * 0.1);
-            day = (day +1);
+        // завести начальную переменную для счетчика пути (расстояния)
+        // возможно лучше применить цикл do ... while, чтобы решить "проблему 1-го дня"
+        // int day = 1;
+
+        while (target > s){ // s < target - лучше читается
+            s = s + (s * 0.1); // получается, что в 1-й день уже пробежал на 10% больше, так не должно быть
+            day = (day +1); // day++ - это выглядит лучше
         }
         System.out.println("Поздравляю! До цели осталось " + day + " Дней");
     }
