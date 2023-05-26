@@ -21,6 +21,9 @@ public class Main2 {
             sum = sum + (i + (n - (i - 1))); // накапливаем первое + последнее число, следующее + предпоследнее
         }
 
+        // for (int i = 1; i <= n; i++) {
+        //sum += i;
+
         System.out.println(sum);
     }
 }
