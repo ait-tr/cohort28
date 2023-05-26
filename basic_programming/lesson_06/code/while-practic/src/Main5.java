@@ -19,6 +19,7 @@ public class Main5 {
         System.out.println("Right part of Ticket " + number);
         System.out.println("Summa Right is: " + sum1);
         System.out.println("Summa Left is: " + sum2);
+        // define is ticket "happy" or not
         if (sum1==sum2) {
             System.out.println("Ticket is happy! ");
         } else {
