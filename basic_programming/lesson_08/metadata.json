@@ -3,6 +3,6 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    
+    "code/src/ArrayAppl.java", "code/src/LogicalOperationAppl.java", "code/src/LoopAppl.java"
   ]
 }
