@@ -4,9 +4,8 @@
   "homework": "homework.md",
 
   "code": [
-    "code/for-loop-practic/src/Main.java",
-    "code/for-loop-practic/src/Main1.java",
-    "code/for-loop-practic/src/Main2.java"
+    "code/array-practicum01/src/Main.java",
+    "code/homework/hw-08/src/Main.java"
   ]
 
 }
