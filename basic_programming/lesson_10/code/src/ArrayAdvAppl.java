@@ -1,8 +1,8 @@
 
 public class ArrayAdvAppl {
 	public static void main(String[] args) {
-		int[] arr = new int[10];
-		printArray(arr);
+		int[] arr = new int[10]; // объявление массива целых чисел, длина 10 элементов
+		printArray(arr); //
 		fillArray(arr, 10, 99);
 		printArray(arr);
 		swapFirstLast(arr);
@@ -45,10 +45,12 @@ public class ArrayAdvAppl {
 		}
 	}
 
+	// Метод печатает массив
 	public static void printArray(int[] arr) {
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + "\t");
 		}
 		System.out.println();
 	}
+
 }
