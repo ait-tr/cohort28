@@ -29,7 +29,7 @@ public class Main1 {
                 right = middle - 1;
             } else if (element > numbers[middle]) { // element in right part
                 left = middle + 1;
-            } else { // element is finded
+            } else { // element found
                 hasElement = true;
                 break;
             }
