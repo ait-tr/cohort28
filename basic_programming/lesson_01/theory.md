@@ -4,7 +4,7 @@ Hello, World!
 ```
 В языке Java эта программа будет выглядеть так:
 ```java
-  class Main { 
+  class MainReverseArray { 
       public static void main(String[] args) {
           System.out.println("Hello, World!");
       }
