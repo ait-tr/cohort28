@@ -9,6 +9,7 @@ public class Computer {
     public Computer() {
     }
 
+    //constructor
     public Computer(String cpu, int ram, int ssd, String brand) {
         this.cpu = cpu;
         this.ram = ram;
@@ -16,6 +17,7 @@ public class Computer {
         this.brand = brand;
     }
 
+    // комплект стандартных методов: Get Set (геттеры и сеттеры)
     public String getCpu() {
         return cpu;
     }
