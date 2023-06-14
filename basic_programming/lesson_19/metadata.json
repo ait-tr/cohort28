@@ -3,6 +3,18 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/GoatAppl.java",
+		"code/src/Goat.java",
+		"code/src/StringAppl.java",
+		"code/src/ComputerAppl.java",
+		"code/src/ComputerCompareAppl.java",
+		"code/src/Computer.java",
+		"code/src/Laptop.java",
+		"code/src/Smartphone.java",
+		"code/src/homeworks/ProductApp.java",
+		"code/src/homeworks/Product.java",
+		"code/src/homeworks/Food.java",
+		"code/src/homeworks/MilkFood.java",
+		"code/src/homeworks/MeatFood.java"
 	]
 }
