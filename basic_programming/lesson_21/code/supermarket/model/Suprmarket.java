@@ -1,4 +1,4 @@
-package supermarket.model;
+package model;
 
 public class Suprmarket {
 }

@@ -3,10 +3,10 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/supermarket/supermarket/model/Food.java,
-		"code/supermarket/supermarket/model/NoFood.java,
-		"code/supermarket/supermarket/model/Product.java,
-		"code/supermarket/supermarket/model/Supermarket.java,
-		"code/supermarket/supermarket/SupermarketAppl.java
+		"code/supermarket/model/Food.java",
+		"code/supermarket/model/NoFood.java",
+		"code/supermarket/model/Product.java",
+		"code/supermarket/model/Supermarket.java",
+		"code/supermarket/SupermarketAppl.java"
 	]
 }

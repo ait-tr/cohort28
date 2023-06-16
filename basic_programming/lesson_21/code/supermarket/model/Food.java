@@ -1,4 +1,4 @@
-package supermarket.model;
+package model;
 
 import java.util.Objects;
 
