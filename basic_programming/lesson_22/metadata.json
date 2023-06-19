@@ -3,6 +3,13 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/homeworks/ComputerShopAppl.java",
+		"code/src/homeworks/ComputerShop.java",
+		"code/src/homeworks/Computer.java",
+		"code/src/homeworks/Laptop.java",
+		"code/src/homeworks/Smartphone.java",
+		"code/src/StringAppl.java",
+		"code/src/User.java",
+		"code/src/UserAppl.java"
 	]
 }
