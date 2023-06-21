@@ -3,6 +3,8 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/homeworks/MaxMinPrimitivesAppl.java",
+		"code/src/User.java",
+		"code/src/UserTest.java"
 	]
 }
