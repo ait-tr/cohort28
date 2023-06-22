@@ -1,6 +1,6 @@
-package ait.book;
+package src.homeworks;
 
-import ait.book.model.Book;
+import src.homeworks.Book;
 
 public class BookAppl {
     public static void main(String[] args) {

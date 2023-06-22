@@ -1,4 +1,4 @@
-package ait.book.model;
+package src.homeworks;
 
 public class Book {
     public static final int ISBN_LENGTH = 13;
