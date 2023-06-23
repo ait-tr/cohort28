@@ -8,7 +8,8 @@ public class ArraySumTest {
 
     ArraySum arraySum; // создаем экземпляр класса
 
-    @BeforeEach // перед каждым тестом создаем "числый, свежий" экземпляр объекта класса
+    @BeforeEach // перед каждым тестом создаем "чистый, свежий" экземпляр объекта класса
+
     void setUp() {
         arraySum = new ArraySum();
     }
