@@ -3,6 +3,17 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/Company.java",
+		"code/src/CompanyImpl.java",
+		"code/src/Employee.java",
+		"code/src/Manager.java",
+		"code/src/WageEmployee.java",
+		"code/src/SalesManager.java",
+		"code/src/CompanyImplTest.java",
+		"code/src/homeworks/FigureAppl.java",
+		"code/src/homeworks/Shape.java",
+		"code/src/homeworks/Circle.java",
+		"code/src/homeworks/Square.java",
+		"code/src/homeworks/Triangle.java"
 	]
 }
