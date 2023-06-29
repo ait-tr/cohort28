@@ -3,6 +3,11 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/ArrayTools.java",
+		"code/src/ArrayToolsTest.java",
+		"code/src/Soldier.java",
+		"code/src/homeworks/Garage.java",
+		"code/src/homeworks/GarageImpl.java",
+		"code/src/homeworks/GarageTest.java"
 	]
 }
