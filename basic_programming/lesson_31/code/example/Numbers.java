@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Numbers implements Comparable<Numbers>{
+public class Numbers implements Comparable<Numbers> { //
     Integer n;
 
     public Numbers(Integer n) {
@@ -30,18 +30,8 @@ public class Numbers implements Comparable<Numbers>{
 
     @Override
     public int compareTo(Numbers o) {
-        int res = this.n.compareTo(o.n);
+        int res = this.n - o.n;
         return res;
     }
 
-    //  @Override
-//    public int compareTo(Numbers o) {
-//        if((this.n - o) > 0){
-//            return 1;
-//        } else if (this.n - o == 0 ) {
-//            return 0;
-//        } else {
-//            return -1;
-//        }
-//    }
 }
