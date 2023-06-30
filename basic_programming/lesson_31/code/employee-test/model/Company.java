@@ -1,6 +1,4 @@
-package src;
-
-import src.Employee;
+package model;
 
 public interface Company {
     boolean addEmployee(Employee employee);
@@ -10,12 +8,6 @@ public interface Company {
     Employee findEmployee(int id);
 
     int quantity();
-
-    double totalSalary();
-
-    double avgSalary();
-
-    double totalSales();
 
     void printEmployees();
 }

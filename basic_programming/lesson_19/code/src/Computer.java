@@ -6,12 +6,7 @@ public class Computer {
     protected int ssd;
     protected String brand;
 
-    public Computer() {
-        super();
-    }
-
     public Computer(String cpu, int ram, int ssd, String brand) {
-        super();
         this.cpu = cpu;
         this.ram = ram;
         this.ssd = ssd;

@@ -1,13 +1,15 @@
-package src;
+package model;
 
-public class Manager extends Employee {
+public class Manager extends Employee{
     private double baseSalary;
     private int grade;
+    private int hours;
 
-    public Manager(int id, String firstName, String lastName, double hours, double baseSalary, int grade) {
-        super(id, firstName, lastName, hours);
+    public Manager(long id, String name, int age, int experience, double baseSalary, int grade, int hours) {
+        super(id, name, age, experience);
         this.baseSalary = baseSalary;
         this.grade = grade;
+        this.hours = hours;
     }
 
     public double getBaseSalary() {
@@ -26,7 +28,6 @@ public class Manager extends Employee {
         this.grade = grade;
     }
 
-    @Override
     public double calcSalary() {
         double salary = baseSalary + grade * hours;
         return salary;

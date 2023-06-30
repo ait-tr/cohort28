@@ -1,4 +1,4 @@
-package ait.employee.model;
+package src;
 
 public class WageEmployee extends Employee {
     private double wage;

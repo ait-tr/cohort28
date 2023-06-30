@@ -1,6 +1,6 @@
-package ait.employee.dao;
+package src;
 
-import ait.employee.model.Employee;
+import src.Employee;
 
 public class CompanyImpl implements Company {
     private Employee[] employees;
