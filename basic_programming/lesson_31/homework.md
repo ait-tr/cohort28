@@ -7,7 +7,7 @@ toString
 equals
 
 **Task 2**
-Create an abstract interface class Company, in which to set abstract methods:
+Create interface Company, in which to set abstract methods:
 - hire an employee
 - fire an employee
 - find an employee in the list of employees
@@ -48,7 +48,7 @@ toString
 equals
 
 **Задание 2**
-Создать абстрактный класс-интерфейс Company, в котором задать абстрактные методы:
+Создать интерфейс Company, в котором задать абстрактные методы:
 - принять на работу сотрудника
 - уволить с работы сотрудника
 - найти работника в списке сотрудников
