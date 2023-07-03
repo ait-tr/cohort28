@@ -3,6 +3,9 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/Wardrobe.java",
+		"code/src/WardrobeTest.java",
+		"code/src/DateSortTest.java",
+		"code/src/homeworks/OddEvenComparatorTest.java"
 	]
 }

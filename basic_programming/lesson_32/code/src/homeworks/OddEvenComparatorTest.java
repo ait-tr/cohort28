@@ -8,26 +8,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class OddEvenComparatorTest {
-    Comparator<Integer> oddEvenComp;
 
-    @BeforeEach
-    void setUp() throws Exception {
-        oddEvenComp = (n1, n2) -> {
-            if (n1 % 2 != 0 && n2 % 2 == 0) {
-                return 1;
-            }
-            if (n1 % 2 == 0 && n2 % 2 != 0) {
-                return -1;
-            }
-            if (n1 % 2 == 0 && n2 % 2 == 0) {
-                return n1 - n2;
-            }
-            if (n1 % 2 != 0 && n2 % 2 != 0) {
-                return n2 - n1;
-            }
-            return 0;
-        };
-    }
 
     @Test
     void testOddEvenComparator() {
