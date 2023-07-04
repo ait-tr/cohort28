@@ -3,6 +3,8 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/City.java",
+		"code/src/CityTest.java",
+		"code/src/homeworks/DateSortTest.java"
 	]
 }
