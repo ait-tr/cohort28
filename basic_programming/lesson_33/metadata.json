@@ -5,6 +5,11 @@
 	"code": [
 		"code/src/City.java",
 		"code/src/CityTest.java",
-		"code/src/homeworks/DateSortTest.java"
+		"code/src/homeworks/DateSortTest.java",
+		"code/src/consultation/company/Company.java",
+		"code/src/consultation/company/CompanyAppl.java",
+		"code/src/consultation/company/CompanyTest.java",
+		"code/src/consultation/company/Filial.java"
+
 	]
 }

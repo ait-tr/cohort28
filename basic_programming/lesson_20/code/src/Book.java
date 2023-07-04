@@ -1,4 +1,4 @@
-package ait.book.model;
+package src;
 
 import java.util.Objects;
 
