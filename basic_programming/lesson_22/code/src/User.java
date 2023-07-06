@@ -10,20 +10,16 @@ public class User {
         setEmail(email);
         setPassword(password);
     }
-
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         if (validateEmail(email)) {
             this.email = email;
         } else {
             System.out.println(email + " isn't valid");
         }
-
     }
-
     /*
     1) @ exists and only one (done)
     2) dot after @ (done)
@@ -61,9 +57,7 @@ public class User {
         } else {
             System.out.println("Password not valid");
         }
-
     }
-
     /*
     1) min 8 symbols
     2) min one symbol of uppercase
