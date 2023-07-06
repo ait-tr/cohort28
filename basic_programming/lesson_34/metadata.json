@@ -1,0 +1,15 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/Matrix.java",
+		"code/src/MatrixTest.java",
+		"code/src/Month.java",
+		"code/src/MonthAppl.java",
+		"code/src/Season.java",
+		"code/src/SeasonAppl.java",
+		"code/src/TwoDimensionArray.java",
+		"code/src/homeworks/CompanyImpl.java"
+	]
+}
