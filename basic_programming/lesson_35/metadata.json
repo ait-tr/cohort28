@@ -3,6 +3,10 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/homeworks/Matrix.java",
+		"code/src/homeworks/MatrixTest.java",
+		"code/src/TimeAppl.java",
+		"code/src/DateOperation.java",
+		"code/src/DateOperationTest.java"
 	]
 }
