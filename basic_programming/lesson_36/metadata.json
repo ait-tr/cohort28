@@ -3,7 +3,10 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/Matrix.java"
+		"code/ait/album/dao/Album.java",
+		"code/ait/album/dao/AlbumImpl.java",
+		"code/ait/album/model/Photo.java",
+		"code/ait/album/tests/AlbumImplTest.java"
 
 	]
 }
