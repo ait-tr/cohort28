@@ -1,4 +1,4 @@
 # План на урок <br/>
 1. Разбор домашнего задания  <br/>
 2. Практическое занятие: реализовать приложение Album, согласно UML  <br/>
-<img src="./album.jpg"/>
+<img src="./album.jpg" alt="UML for Album application"/>
