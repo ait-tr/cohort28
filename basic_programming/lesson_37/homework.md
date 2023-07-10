@@ -10,4 +10,4 @@
 
 В приложении Forum нет ограничения на колличество постов. Т. е. при добавлении нового поста, массив надо увеличивать при помощи System.arrayCopy  <br/>
 
-<img src="./forum.jpg" alt="UML for Forum application"/>
+<img src="https://github.com/ait-tr/cohort28/blob/main/basic_programming/lesson_37/forum.jpg?raw=true" alt="UML for Forum application"/>
