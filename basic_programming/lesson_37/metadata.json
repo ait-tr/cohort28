@@ -3,6 +3,11 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		
+		"code/src/homeworks/Album.java",
+		"code/src/homeworks/AlbumImpl.java",
+		"code/src/Photo.java",
+		"code/src/homeworks/AlbumTest.java",
+		"code/src/homeworks/DateOperation.java",
+		"code/src/homeworks/DateOperationTest.java"
 	]
 }
