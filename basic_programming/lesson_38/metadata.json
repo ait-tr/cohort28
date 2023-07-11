@@ -6,6 +6,11 @@
 		"code/src/homeworks/Post.java",
 		"code/src/homeworks/Forum.java",
 		"code/src/homeworks/ForumImpl.java",
-		"code/src/homeworks/ForumTest.java"
+		"code/src/homeworks/ForumTest.java",
+		"code/src/Post.java",
+		"code/src/Forum.java",
+		"code/src/ForumImpl.java",
+		"code/src/ForumTest.java",
+		"code/src/ExceptionAppl.java"
 	]
 }
