@@ -6,6 +6,15 @@
 		"code/src/homeworks/Post.java",
 		"code/src/homeworks/Forum.java",
 		"code/src/homeworks/ForumImpl.java",
-		"code/src/homeworks/ForumTest.java"
+		"code/src/homeworks/ForumTest.java",
+		"code/src/ExceptionAppl.java",
+		"code/src/NoSolutionException.java",
+		"code/src/SolutionAnyNumberException.java",
+		"code/src/MyString.java",
+		"code/src/MyStringAppl.java",
+		"code/src/MyStringIterator.java",
+		"code/src/Fibonacci.java",
+		"code/src/FibonacciAppl.java",
+		"code/src/FibonacciIterator.java",
 	]
 }
