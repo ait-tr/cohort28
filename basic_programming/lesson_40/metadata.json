@@ -5,6 +5,10 @@
 	"code": [
 		"code/src/homeworks/Fibonacci.java",
 		"code/src/homeworks/FibonacciAppl.java",
-		"code/src/homeworks/FibonacciIterator.java"
+		"code/src/homeworks/FibonacciIterator.java",
+		"code/src/ComplexityAppl.java",
+		"code/src/ListAppl.java",
+		"code/src/IList.java",
+		"code/src/MyArrayList.java"
 	]
 }
