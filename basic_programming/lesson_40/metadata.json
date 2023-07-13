@@ -1,0 +1,10 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homeworks/Fibonacci.java",
+		"code/src/homeworks/FibonacciAppl.java",
+		"code/src/homeworks/FibonacciIterator.java"
+	]
+}
