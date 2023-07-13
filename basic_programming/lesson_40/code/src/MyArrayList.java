@@ -6,12 +6,14 @@ import java.util.Arrays;
 import java.util.Iterator;
 
 public class MyArrayList<E> implements IList<E> {
-    private Object[] elements;
-    private int size;
+
+    // поля
+    private Object[] elements; // массив объектов
+    private int size;  // размер этого массива
 
     public MyArrayList() {
 //        elements = new Object[10];
-        this(10);
+        this(10); // это начальный размер любого  ArrayList
     }
 
     public MyArrayList(int initialCapacity) {
@@ -20,6 +22,8 @@ public class MyArrayList<E> implements IList<E> {
         }
         elements = new Object[initialCapacity];
     }
+
+    // методы этого класса
 
     //O(1)
     @Override
@@ -30,6 +34,8 @@ public class MyArrayList<E> implements IList<E> {
     @Override
     public void clear() {
         //TODO
+        // придумать, как удалить элементы массива (цикл)
+        // size изменить на 0
     }
 
     //O(1)
