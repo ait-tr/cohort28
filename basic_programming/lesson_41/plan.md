@@ -1,11 +1,27 @@
 # Lesson plan
 ## Lesson 41, 14 of July 2023
 
+### Let's remember the topics of the week
 
+1. Java Time API, LocalDate, LocalDateTime
+   Album Application, method getPhotoBetweenDate(From, To)
+- what was difficult?
 
+2. Exceptions, try-catch
+   see theory
 
+3.InterfaceIterator<T>
+- why is it needed?
+- the example that was with the string
 
+4. Complexity - evaluation of the complexity of the algorithm
+   What are the values for this difficulty?
+   For which algorithms do we know the complexity estimate?
 
+5.ArrayList
+- what is it and why?
+- what are the main features of ArrayList?
+- ArrayList vs Array
 
 __________________________
 
@@ -31,5 +47,5 @@ Album Application, method getPhotoBetweenDate(From, To)
 
 5. ArrayList 
 - что это такое и для чего?
-- какие основные фичи у ArrayList? 
+- какие основные фичи у ArrayList?
 - ArrayList vs Array

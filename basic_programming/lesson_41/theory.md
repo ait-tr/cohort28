@@ -109,7 +109,7 @@ https://devopedia.org/algorithmic-complexity
 ### Синтаксис создания ArrayList:
 import java.util.ArrayList;
 
-ArrayList<ТИП> имяСписка = new ArrayList<ТИП>();
+ArrayList<Тип> имяСписка = new ArrayList<Тип>();
 
 **примеры:**
 ArrayList<int> myArrayList = new ArrayList<int>(); // список целых чисел
