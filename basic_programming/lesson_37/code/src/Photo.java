@@ -1,14 +1,19 @@
-package ait.album.model;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 public class Photo implements Comparable<Photo>{
+
+    // поля класса
     private int albumId;
     private int photoId;
-    private String title;
+    private String title; // название фото
     private String url;
-    private LocalDateTime date;
+    private LocalDateTime date; // это было новое поле
 
+    // методы
+
+    // конструктор
     public Photo(int albumId, int photoId, String title, String url, LocalDateTime date) {
         this.albumId = albumId;
         this.photoId = photoId;

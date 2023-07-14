@@ -3,8 +3,12 @@ package ait.mystring.model;
 import java.util.Iterator;
 
 public class MyString implements Iterable<Character>{
-    private StringBuilder str;
 
+    // поля класса
+    private StringBuilder str; // StringBilder - это встроенный в Java клаас а ля String
+
+    // методы
+    // конструктор
     public MyString(String str) {
         this.str = new StringBuilder(str);
     }

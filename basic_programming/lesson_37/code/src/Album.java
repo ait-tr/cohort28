@@ -1,4 +1,4 @@
-package ait.album.dao;
+
 
 import ait.album.model.Photo;
 

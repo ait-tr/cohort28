@@ -1,4 +1,4 @@
-package ait.album.tests;
+
 
 import ait.album.dao.Album;
 import ait.album.dao.AlbumImpl;

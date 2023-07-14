@@ -27,6 +27,7 @@ Exception - исключение, особая ситуация (перевод 
 catch(Exception e) { // схватить
 //  Block of code to handle errors
 }`
+
 #### Пояснения
 The **try** statement allows you to define a block of code
 to be tested for errors while it is being executed.
@@ -48,7 +49,7 @@ The **try and catch keywords come in pairs**:
 https://www.geeksforgeeks.org/flow-control-in-try-catch-finally-in-java/
 
 Алгоритм применения try ... catch
-1. Ели программа падает (код окончания не равен 0) , работа с пользователем прекращается
+1. Ели программа падает (код окончания не равен 0), работа с пользователем прекращается
 2. то смотрим на дигностику - то, что печатается в момент падения программы, там есть указания на номера строк
    в коде, в которых происходят ошибки
 3. На эти строки надо "одеть" конструкцию try ... catch

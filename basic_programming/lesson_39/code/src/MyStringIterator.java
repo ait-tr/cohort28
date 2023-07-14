@@ -3,15 +3,20 @@ package ait.mystring.model;
 import java.util.Iterator;
 
 public class MyStringIterator implements Iterator<Character> {
-    private StringBuilder str;
-    private int size;
-    private int currPos;
 
+    // поля
+    private StringBuilder str;
+    private int size; // размер коллекции
+    private int currPos; // позиция курсор
+
+    // конструктор
     public MyStringIterator(StringBuilder str){
         this.str = str;
         size = str.length();
 //        currPos = 0;
     }
+
+    // методы
     @Override
     public boolean hasNext() {
         return currPos < size;

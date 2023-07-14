@@ -1,4 +1,4 @@
-package ait.album.dao;
+
 
 import ait.album.model.Photo;
 
@@ -73,16 +73,17 @@ public class AlbumImpl implements Album {
     public Photo[] getAllPhotoFromAlbum(int albumId) {
         return findByPredicate(p -> p.getAlbumId() == albumId);
     }
+    // предикат проверяет совпадение ID альбомов
 
     @Override
     public Photo[] getPhotoBetweenDate(LocalDate dateFrom, LocalDate dateTo) {
-        Photo pattern = new Photo(0, Integer.MIN_VALUE, null, null, dateFrom.atStartOfDay());
-        int from = -Arrays.binarySearch(photos, 0, size, pattern, comparator) -1;
+        Photo pattern = new Photo(0, Integer.MIN_VALUE, null, null, dateFrom.atStartOfDay()); // вводим объектную переменную
+        int from = -Arrays.binarySearch(photos, 0, size, pattern, comparator) -1; // находим индекс начального фото (левый край)
 //        from = from >= 0 ? from : -from - 1;
-        pattern = new Photo(0, Integer.MAX_VALUE, null, null, LocalDateTime.of(dateTo, LocalTime.MAX));
+        pattern = new Photo(0, Integer.MAX_VALUE, null, null, LocalDateTime.of(dateTo, LocalTime.MAX)); // находим правый край
         int to = -Arrays.binarySearch(photos, 0, size, pattern, comparator) - 1;
 //        to = to >= 0 ? to : -to - 1;
-        return Arrays.copyOfRange(photos, from, to);
+        return Arrays.copyOfRange(photos, from, to); // Range - диапазон, создаем новый массив с нужными фото
     }
 
     @Override
@@ -90,14 +91,15 @@ public class AlbumImpl implements Album {
         return size;
     }
 
-    private Photo[] findByPredicate(Predicate<Photo> predicate) {
+    private Photo[] findByPredicate(Predicate<Photo> predicate) { // Predicate - это условие, критерий
+        // интерфейс Predicate есть в Java, у него есть один стандартный метод - test
         Photo[] res = new Photo[size];
-        int j = 0;
+        int j = 0; // счетчик найденных фото в альбоме
         for (int i = 0; i < size; i++) {
-            if (predicate.test(photos[i])) {
-                res[j++] = photos[i];
+            if (predicate.test(photos[i])) { // проверяем имеется ли это фото в альбоме, так как мы ищем фото в альбоме
+                res[j++] = photos[i]; // формируем массив
             }
         }
-        return Arrays.copyOf(res, j);
+        return Arrays.copyOf(res, j); // возвращаем сформированный массив
     }
 }

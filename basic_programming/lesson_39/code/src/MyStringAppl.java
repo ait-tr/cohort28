@@ -6,9 +6,10 @@ import java.util.Iterator;
 
 public class MyStringAppl {
     public static void main(String[] args) {
-        MyString myString = new MyString("Two beer, or not two beer");
+        MyString myString = new MyString("Two beer, or not two beer"); // создаем объект нового класса
         System.out.println(myString);
-        Iterator<Character> iterator = myString.iterator();
+        Iterator<Character> iterator = myString.iterator(); // объявляем переменную типа Iterator
+
         while (iterator.hasNext()) {
             char c = iterator.next();
             if (c == 'e') {
