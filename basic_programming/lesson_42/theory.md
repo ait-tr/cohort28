@@ -53,7 +53,7 @@
 
 ## Итератор
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort28/main/basic_programming/lesson_07/img/1.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort28/main/basic_programming/lesson_42/img/1.png)
 
 * Зачастую нам необходимо решить задачу последовательного обхода какой-либо коллекции.
 * Это значит, что на каждом шаге нужно получать один новый элемент из коллекции и что-то с ним делать.
@@ -99,7 +99,7 @@ for (String word : words) {
 * `word` - переменная, которая на каждой итерации цикла принимает новое значение - новый элемент из коллекции
 * `words` - название коллекции, которую мы хотим "обойти"
 
-![image](https://raw.githubusercontent.com/ait-tr/cohort28/main/basic_programming/lesson_07/img/2.png)
+![image](https://raw.githubusercontent.com/ait-tr/cohort28/main/basic_programming/lesson_42/img/2.png)
 
 ## Словарик
 
