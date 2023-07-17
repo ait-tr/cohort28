@@ -1,0 +1,10 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"code": [
+		"code/IList.java",
+		"code/Main.java",
+		"code/Main2.java",
+		"code/MyArrayList.java"
+	]
+}
