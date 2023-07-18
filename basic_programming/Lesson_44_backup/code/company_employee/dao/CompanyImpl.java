@@ -87,6 +87,7 @@ public class CompanyImpl implements Company {
 	@Override
 	public Employee[] findEmployeesSalaryBetween(double min, double max) {
 		Predicate<Employee> predicate = new Predicate<>() {
+
 			@Override
 			public boolean test(Employee t) {
 				return t.calcSalary() >= min && t.calcSalary() < max;
