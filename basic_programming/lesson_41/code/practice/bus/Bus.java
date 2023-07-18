@@ -13,6 +13,10 @@ public class Bus implements Comparable<Bus>{
         this.capacity = capacity;
     }
 
+    public Bus(String route) {
+        this.route = route;
+    }
+
     public Bus() {
     }
 
@@ -42,7 +46,7 @@ public class Bus implements Comparable<Bus>{
 
     @Override
     public String toString() {
-        return "Bus{" + "brand='" + brand + ", route='" + route + ", capacity=" + capacity + '}';
+        return "{" + "brand='" + brand + ", route='" + route + ", capacity=" + capacity + '}';
     }
 
 

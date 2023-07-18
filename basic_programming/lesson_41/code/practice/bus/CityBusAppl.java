@@ -15,18 +15,29 @@ public class CityBusAppl {
         cityBuses.add(new Bus("Man", "40", 55));
         cityBuses.add(new Bus("Man", "10", 45));
 
-        System.out.println(cityBuses.size());
+        System.out.println("Size of ArrayList cityBases: " + cityBuses.size());
         
         int index = cityBuses.indexOf(new Bus("", "40", 0));
-
         System.out.println(index);
+
+        System.out.println("======Index of route 30 ========");
+        int index1 = cityBuses.indexOf(new Bus ("30"));
+        System.out.println(index1);
+
+        System.out.println("======Index = 0 ========");
+        System.out.println(cityBuses.get(0));
+
 
         // for(T e: "set of T"){ do something};
         // В теле этого цикла переменная "e" принимает поочередно значение каждого элементаor(T e: "set of T"){ do something};
-
+        System.out.println("======List ========");
         // печать до сортировки
         for (Bus route: cityBuses) {
             System.out.println(route);
+        }
+        System.out.println("======Indexes ========");
+        for (Bus route: cityBuses) {
+            System.out.println(cityBuses.indexOf(route));
         }
 
         System.out.println("======Sorting by route ========");
@@ -45,6 +56,11 @@ public class CityBusAppl {
         }
 
         System.out.println(totalCapacity);
+
+        System.out.println("========List with Indexes=============");
+        for (int i = 0; i < cityBuses.size(); i++) {
+            System.out.println("Index = " + i + " " + cityBuses.get(i));
+        }
 
     }
 }
