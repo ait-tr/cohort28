@@ -1,6 +1,7 @@
 {
 	"plan": "plan.md",
 	"theory": "theory.md",
+	"homework": "homework.md",
 	"code": [
 		"code/User.java",
 		"code/Main.java",
