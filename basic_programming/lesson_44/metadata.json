@@ -3,10 +3,13 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/User.java",
-		"code/Main.java",
-		"code/UserTest.java",
-		"code/Calculator.java",
-		"code/Main2.java"
+		"code/company_employee/dao/Company.java",
+		"code/company_employee/dao/CompanyImpl.java",
+		"code/company_employee/model/Employee.java",
+		"code/company_employee/model/Manager.java",
+		"code/company_employee/model/SalesManager.java",
+		"code/company_employee/model/WageEmployee.java",
+		"code/company_employee/tests/CompanyTests.java"
+
 	]
 }
