@@ -9,7 +9,7 @@
 		"code/company_employee/model/Manager.java",
 		"code/company_employee/model/SalesManager.java",
 		"code/company_employee/model/WageEmployee.java",
-		"code/company_employee/tests/CompanyTests.java"
+		"code/company_employee/tests/CompanyTest.java"
 
 	]
 }
