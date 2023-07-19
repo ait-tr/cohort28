@@ -3,26 +3,28 @@ package company_employee.dao;
 import company_employee.model.Employee;
 
 public interface Company {
-	
-	boolean addEmployee(Employee employee);
 
-	Employee removeEmployee(int id);
-
-	Employee findEmployee(int id);
+	// перечень действий - методов
 	
-	double totalSalary();
+	boolean addEmployee(Employee employee); // берем на работу, добавляем в ...
+
+	Employee removeEmployee(int id); // увольняем, удаляем из ...
+
+	Employee findEmployee(int id); // ищем по ID
+	
+	double totalSalary(); // месячный ФОТ
 	
 	default double averageSalary() {
 		return totalSalary() / size();
-	}
+	} // средняя разплата по компании
 	
-	double totalSales();
+	double totalSales(); // объем продаж за месяц
 	
-	int size();
+	int size(); // сколько работников в компании
 	
-	void printEmployees();
+	void printEmployees(); // печать списка работников
 	
-	Employee[] findEmployeesHoursGreateThan(int hours);
+	Employee[] findEmployeesHoursGreateThan(int hours); // ищем "Стахановцев"
 	
-	Employee[] findEmployeesSalaryBetween(double min, double max);
+	Employee[] findEmployeesSalaryBetween(double min, double max); // ищем сотрудников с з/п от ... и до ...
 }

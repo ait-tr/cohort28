@@ -5,6 +5,7 @@
 	"code": [
 		"code/company_employee/dao/Company.java",
 		"code/company_employee/dao/CompanyImpl.java",
+		"code/company_employee/dao/CompanyArrayListImpl.java",
 		"code/company_employee/model/Employee.java",
 		"code/company_employee/model/Manager.java",
 		"code/company_employee/model/SalesManager.java",

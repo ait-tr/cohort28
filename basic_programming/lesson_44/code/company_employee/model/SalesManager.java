@@ -1,9 +1,12 @@
 package company_employee.model;
 
 public class SalesManager extends Employee {
-	private double salesValue;
+
+	// поля
+	private double salesValue; // месячный объем продаж
 	private double percent;
 
+	// конструктоор
 	public SalesManager(int id, String firstName, String lastName, double hours, double salesValue, double percent) {
 		super(id, firstName, lastName, hours);
 		this.salesValue = salesValue;
@@ -28,7 +31,7 @@ public class SalesManager extends Employee {
 	
 	@Override
 	public double calcSalary() {
-		double salary = salesValue * percent;
+		double salary = salesValue * percent; // процент от объема продаж
 		if (salary < hours * minWage) {
 			salary = hours * minWage;
 		}

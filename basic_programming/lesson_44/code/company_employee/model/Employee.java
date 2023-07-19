@@ -1,12 +1,16 @@
 package company_employee.model;
 
 public abstract class Employee {
-	protected static double minWage = 30;
-	protected final int id;
+
+	// поля класса
+	protected static double minWage = 30; // ставка в евро
+	protected final int id; // это хорошо
 	protected String firstName;
 	protected String lastName;
 	protected double hours;
 
+	// методы
+	// метод - конструктор
 	public Employee(int id, String firstName, String lastName, double hours) {
 		this.id = id;
 		this.firstName = firstName;
@@ -50,7 +54,7 @@ public abstract class Employee {
 		return id;
 	}
 	
-	public abstract double calcSalary();
+	public abstract double calcSalary(); // этот метод будет требоваться реализовать в дочерних классах
 
 	@Override
 	public String toString() {
@@ -65,6 +69,7 @@ public abstract class Employee {
 		return result;
 	}
 
+	// метод обеспечивает сравнение объектов класса Employee
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {
@@ -74,7 +79,7 @@ public abstract class Employee {
 			return false;
 		}
 		Employee other = (Employee) obj;
-		if (id != other.id) {
+		if (id != other.id) { // сравнение по ID работника
 			return false;
 		}
 		return true;

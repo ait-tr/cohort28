@@ -1,6 +1,7 @@
 package company_employee.tests;
 
 import company_employee.dao.Company;
+import company_employee.dao.CompanyArrayListImpl;
 import company_employee.dao.CompanyImpl;
 import company_employee.model.Employee;
 import company_employee.model.Manager;
@@ -17,7 +18,7 @@ class CompanyTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		company = new CompanyImpl(5);
+		company = new CompanyArrayListImpl(5);
 		firm = new Employee[4];
 		firm[0] = new Manager(1000, "John", "Smith", 182, 20_000, 20);
 		firm[1] = new WageEmployee(2000, "Mary", "Smith", 182, 40);
