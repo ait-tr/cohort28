@@ -1,4 +1,4 @@
-package ait.cars.test;
+
 
 import ait.cars.dao.Garage;
 import ait.cars.dao.GarageImpl;
