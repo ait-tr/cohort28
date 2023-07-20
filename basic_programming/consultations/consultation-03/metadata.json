@@ -1,0 +1,10 @@
+{
+	"homework": "homework.md",
+	"code": [
+		"code/Main.java",
+		"code/Main1.java",
+		"code/Main2.java",
+		"code/Main3.java",
+		"code/NumbersProcessor.java"
+	]
+}
