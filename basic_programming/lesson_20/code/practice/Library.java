@@ -1,6 +1,6 @@
 package ait.book.dao;
 
-import src.Book;
+import practice.Book;
 
 public class Library {
     private Book[] books;

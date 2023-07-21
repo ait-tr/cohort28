@@ -1,6 +1,4 @@
-package src;
-
-import src.Employee;
+package practice;
 
 public interface Company {
     boolean addEmployee(Employee employee);

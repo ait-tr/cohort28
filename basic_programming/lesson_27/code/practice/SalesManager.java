@@ -1,4 +1,4 @@
-package src;
+package practice;
 
 public class SalesManager extends Employee {
     private double salesValue;

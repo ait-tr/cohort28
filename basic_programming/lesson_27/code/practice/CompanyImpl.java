@@ -1,6 +1,4 @@
-package src;
-
-import src.Employee;
+package practice;
 
 public class CompanyImpl implements Company {
     private Employee[] employees;

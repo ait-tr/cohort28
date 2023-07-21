@@ -1,4 +1,4 @@
-package src;
+package practice;
 
 public class Manager extends Employee {
     private double baseSalary;

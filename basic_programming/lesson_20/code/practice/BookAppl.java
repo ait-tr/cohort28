@@ -1,7 +1,7 @@
 package ait.book;
 
 import ait.book.dao.Library;
-import src.Book;
+import practice.Book;
 
 public class BookAppl {
     public static void main(String[] args) {

@@ -1,4 +1,3 @@
-package ait.employee.model;
 
 public class Manager extends Employee {
     private double baseSalary;

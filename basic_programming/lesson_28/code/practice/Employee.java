@@ -1,4 +1,5 @@
-package ait.employee.model;
+package practice;
+
 
 import java.util.Objects;
 

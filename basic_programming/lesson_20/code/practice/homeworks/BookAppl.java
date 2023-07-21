@@ -1,6 +1,4 @@
-package src.homeworks;
-
-import src.homeworks.Book;
+package practice.homeworks;
 
 public class BookAppl {
     public static void main(String[] args) {
