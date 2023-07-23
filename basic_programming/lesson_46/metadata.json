@@ -3,9 +3,16 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/autopark/Bus.java",
-		"code/autopark/Driver.java",
-		"code/autopark/Passenger.java",
-		"code/Main.java"
+		"code/company_employee/dao/Company.java",
+		"code/company_employee/dao/CompanyArrayListImpl.java",
+		"code/company_employee/dao/CompanyImpl.java",
+		"code/company_employee/model/Employee.java",
+		"code/company_employee/model/Manager.java",
+		"code/company_employee/model/SalesManager.java",
+		"code/company_employee/model/WageEmployee.java",
+		"code/company_employee/tests/CompanyTest.java",
+		"code/company_employee/tests/CompanyTestUpdated.java",
+		"code/company_employee/tests/tests_description.md",
+		"code/sum_of_array/SumOfArray.java"
 	]
 }
