@@ -18,7 +18,7 @@ class CompanyTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
-		company = new CompanyArrayListImpl(5);
+		company = new CompanyArrayListImpl(5); // мы перешли на класс CompanyArrayListImpl !!!
 		firm = new Employee[4];
 		firm[0] = new Manager(1000, "John", "Smith", 182, 20_000, 20);
 		firm[1] = new WageEmployee(2000, "Mary", "Smith", 182, 40);
