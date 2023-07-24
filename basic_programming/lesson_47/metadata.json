@@ -4,6 +4,9 @@
 	"homework": "homework.md",
 	"code": [
 		"code/src/homeworks/ListAppl.java",
-		"code/src/homeworks/MyArrayList.java"
+		"code/src/homeworks/MyArrayList.java",
+		"code/src/ListAppl.java",
+		"code/src/MyLinkedList.java",
+		"code/src/Node.java"
 	]
 }
