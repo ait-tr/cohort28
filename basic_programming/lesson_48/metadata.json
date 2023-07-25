@@ -7,6 +7,10 @@
 		"code/src/homeworks/MyLinkedList.java",
 		"code/src/ListAppl.java",
 		"code/src/ListPerfomanceTestAppl.java",
-		"code/src/CollectionsAppl.java"
+		"code/src/CollectionsAppl.java",
+		"code/citizens/dao/Citizens.java",
+		"code/citizens/dao/CitizensImpl.java",
+		"code/citizens/model/Person.java"
+
 	]
 }
