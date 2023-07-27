@@ -6,6 +6,9 @@
 		"code/src/homeworks/CitizensTest.java",
 		"code/src/ISet.java",
 		"code/src/MyHashSet.java",
-		"code/src/MyHashSetAppl.java"
+		"code/src/MyHashSetAppl.java",
+		"code/practice_lambda/User.java",
+		"code/practice_lambda/UserAppl.java"
+
 	]
 }
