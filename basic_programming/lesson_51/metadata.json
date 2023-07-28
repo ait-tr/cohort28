@@ -3,12 +3,9 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/CitizensTest.java",
-		"code/src/ISet.java",
-		"code/src/MyHashSet.java",
-		"code/src/MyHashSetAppl.java",
-		"code/practice_lambda/User.java",
-		"code/practice_lambda/UserAppl.java"
+		"code/movie/dao/MoviesCollection.java",
+		"code/movie/dao/MoviesCollectionImpl.java",
+		"code/movie/model/Movie.java"
 
 	]
 }
