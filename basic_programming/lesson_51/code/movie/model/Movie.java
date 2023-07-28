@@ -1,7 +1,6 @@
-package movie;
+package movie.model;
 
 import java.time.LocalDate;
-import java.util.Objects;
 
 public class Movie {
     private long imdb;

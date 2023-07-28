@@ -1,6 +1,6 @@
 package movie.dao;
 
-import movie.Movie;
+import movie.model.Movie;
 
 import java.time.LocalDate;
 
