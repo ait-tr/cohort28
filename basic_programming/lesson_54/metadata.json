@@ -3,6 +3,18 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/DigitsFreqAppl.java"
+		"code/src/homeworks/DigitsFreqAppl.java",
+		"code/src/DigitsFreqAppl.java",
+		"code/src/WordsFreqAppl.java",
+		"code/src/Anagram.java",
+		"code/src/AnagramTest.java",
+		"code/src/Person.java",
+		"code/src/PersonOptionalAppl.java",
+		"code/src/PersonNotFoundException.java",
+		"code/src/Entity.java",
+		"code/src/EntityCollection.java",
+		"code/src/A.java",
+		"code/src/B.java",
+		"code/src/C.java"
 	]
 }
