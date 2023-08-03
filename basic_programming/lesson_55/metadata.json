@@ -5,6 +5,8 @@
 	"code": [
 		"code/src/homeworks/A.java",
 		"code/src/homeworks/B.java",
-		"code/src/homeworks/C.java"
+		"code/src/homeworks/C.java",
+		"code/src/MethodReferenceAppl.java",
+		"code/src/StreamAppl.java"
 	]
 }
