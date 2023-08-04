@@ -1,4 +1,4 @@
-package practice.supermarket;
+package practice.supermarket.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
