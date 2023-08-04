@@ -3,10 +3,8 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/A.java",
-		"code/src/homeworks/B.java",
-		"code/src/homeworks/C.java",
-		"code/src/MethodReferenceAppl.java",
-		"code/src/StreamAppl.java"
+		"code/practice/supermarket/dao/Supermarket.java",
+		"code/practice/supermarket/model/Product.java"
+
 	]
 }
