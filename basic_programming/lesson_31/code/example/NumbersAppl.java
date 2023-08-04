@@ -5,12 +5,6 @@ import java.util.Comparator;
 
 public class NumbersAppl {
     public static void main(String[] args) {
-//        cats = new Cat[] {
-//                new Cat("Belka", 4, "red" , 3),
-//                new Cat("Strelka", 5, "white", 6),
-//                new Cat("Tom", 5, "gray", 7),
-//                new Cat("Jerry", 6, "brown", 4)
-//        };
 
         Numbers[] num = new Numbers[]{
                 new Numbers(5),
