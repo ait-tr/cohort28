@@ -3,6 +3,10 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/CompanyStreamImpl.java"
+		"code/src/homeworks/CompanyStreamImpl.java",
+		"code/src/CompanyStreamImpl.java",
+		"code/src/Programmer.java",
+		"code/src/ProgrammerAppl.java",
+		"code/src/StreamPrimitivesAppl.java"
 	]
 }
