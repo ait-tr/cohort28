@@ -7,6 +7,9 @@
 		"code/src/CompanyStreamImpl.java",
 		"code/src/Programmer.java",
 		"code/src/ProgrammerAppl.java",
-		"code/src/StreamPrimitivesAppl.java"
+		"code/src/StreamPrimitivesAppl.java",
+		"code/consultation/Book.java",
+		"code/consultation/BookAppl.java"
+
 	]
 }

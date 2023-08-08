@@ -1,4 +1,4 @@
-package ait.arrays.test;
+
 
 import ait.arrays.utils.ArrayTools;
 import ait.soldier.model.Soldier;

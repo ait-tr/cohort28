@@ -7,7 +7,10 @@
 	    THURSDAY, FRIDAY, SATURDAY 
 	}
 	
-Все перечисления неявно расширяют java.lang.Enum. Вот ссылка на официальный Oracle туториал по перечисляемым типам: <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">Enum</a>
+Все перечисления неявно расширяют java.lang.Enum. 
+Вот ссылка на официальный Oracle туториал по перечисляемым типам: 
+<a href="https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html">Enum</a>
+
 </li>
 <li> Многомерные массивы в Java реализованы, как массив массивов. Например двумерный массив соответсвующий таюлицу цулых чисел, состоящей из 5 строк и 4 столбцов, в Java можно задать так: 
 

@@ -1,4 +1,3 @@
-package ait.city.test;
 
 import ait.city.model.City;
 import org.junit.jupiter.api.BeforeEach;
