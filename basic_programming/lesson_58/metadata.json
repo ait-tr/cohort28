@@ -6,6 +6,10 @@
 		"code/src/homeworks/Box.java",
 		"code/src/homeworks/Pomegranate.java",
 		"code/src/homeworks/Seed.java",
-		"code/src/homeworks/PomegranateAppl.java"
+		"code/src/homeworks/PomegranateAppl.java",
+		"code/src/ByteOutputAppl.java",
+		"code/src/ByteInputAppl.java",
+		"code/src/CopyAppl.java",
+		"code/src/CompareAppl.java"
 	]
 }
