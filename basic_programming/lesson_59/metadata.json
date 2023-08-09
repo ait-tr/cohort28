@@ -3,6 +3,9 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/CompareAppl.java"
+		"code/src/homeworks/CompareAppl.java",
+		"code/src/ConsoleIOAppl.java",
+		"code/src/EmployeesDataAppl.java",
+		"code/src/JavaFileAppl.java"
 	]
 }
