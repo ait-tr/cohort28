@@ -1,4 +1,4 @@
-package ait.charstream;
+package src;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
