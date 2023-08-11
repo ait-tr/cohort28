@@ -3,11 +3,6 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/TitanicAppl.java",
-		"code/src/homeworks/TitanicStats.java",
-		"code/src/homeworks/TitanicStatsImpl.java",
-		"code/src/MultiThreadingAppl.java",
-		"code/src/MyTaskImplements.java",
-		"code/src/MyTaskExtends.java"
+		"code/code/restaurant_bot/Main.java"
 	]
 }

@@ -13,7 +13,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         HashMap<Integer, Boolean> tables = new HashMap<Integer, Boolean>();
         // Подготовка к сохранению статуса столов в файле
-        String path = "/Users/leonidk/Library/Mobile Documents/com~apple~CloudDocs/Documents/Моя работа/Курс Java Core/cohort23.2/basic_programming/lesson_31/code/restaurant_bot_1/src/";
+        String path = "lesson_61/code/restaurant_bot/";
         String fileName = "tables_status.txt";
         // задаем статус столиков: все столики свободны
         tables.put(1, false);
@@ -49,6 +49,7 @@ public class Main {
     }
 
     // ======================Methods=========================
+
     public static void reserv_table(HashMap<Integer, Boolean> map, int num) {
         if (map.get(num).equals(false)) {
             map.put(num,true);
