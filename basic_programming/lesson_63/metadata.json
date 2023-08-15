@@ -1,0 +1,10 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homeworks/ElevatorAppl.java",
+		"code/src/homeworks/Elevator.java",
+		"code/src/homeworks/Truck.java"
+	]
+}
