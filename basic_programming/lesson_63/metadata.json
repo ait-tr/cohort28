@@ -12,7 +12,7 @@
 		"code/src/atomic/ElevatorAppl.java",
 		"code/src/atomic/Elevator.java",
 		"code/src/atomic/Truck.java",
-		"code/src/atomic/InfinityLoppAppl.java",
+		"code/src/atomic/InfinityLoopAppl.java",
 		"code/src/atomic/InfinityLoop.java",
 		"code/src/deadlock/BankDeadlockAppl.java",
 		"code/src/deadlock/Account.java",
