@@ -5,6 +5,17 @@
 	"code": [
 		"code/src/homeworks/ElevatorAppl.java",
 		"code/src/homeworks/Elevator.java",
-		"code/src/homeworks/Truck.java"
+		"code/src/homeworks/Truck.java",
+		"code/src/lock/ElevatorAppl.java",
+		"code/src/lock/Elevator.java",
+		"code/src/lock/Truck.java",
+		"code/src/atomic/ElevatorAppl.java",
+		"code/src/atomic/Elevator.java",
+		"code/src/atomic/Truck.java",
+		"code/src/atomic/InfinityLoppAppl.java",
+		"code/src/atomic/InfinityLoop.java",
+		"code/src/deadlock/BankDeadlockAppl.java",
+		"code/src/deadlock/Account.java",
+		"code/src/deadlock/Transfer.java"
 	]
 }
