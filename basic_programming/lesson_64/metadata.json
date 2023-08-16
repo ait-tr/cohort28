@@ -1,0 +1,10 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homework/BankDeadlockAppl.java",
+		"code/src/homework/Account.java",
+		"code/src/homework/Transfer.java"
+	]
+}
