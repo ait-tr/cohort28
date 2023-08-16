@@ -5,6 +5,10 @@
 	"code": [
 		"code/src/homework/BankDeadlockAppl.java",
 		"code/src/homework/Account.java",
-		"code/src/homework/Transfer.java"
+		"code/src/homework/Transfer.java",
+		"code/src/CompanyStreamImpl.java",
+		"code/src/SumRectangles.java",
+		"code/src/IntegralThreadsAppl.java",
+		"code/src/IntegralExecutorAppl.java"
 	]
 }
