@@ -3,9 +3,9 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homework/BankDeadlockAppl.java",
-		"code/src/homework/Account.java",
-		"code/src/homework/Transfer.java",
+		"code/src/homeworks/BankDeadlockAppl.java",
+		"code/src/homeworks/Account.java",
+		"code/src/homeworks/Transfer.java",
 		"code/src/CompanyStreamImpl.java",
 		"code/src/SumRectangles.java",
 		"code/src/IntegralThreadsAppl.java",
