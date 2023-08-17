@@ -1,0 +1,9 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homework/ExecutorGroupSum.java",
+		"code/src/homework/ThreadGroupSum.java"
+	]
+}
