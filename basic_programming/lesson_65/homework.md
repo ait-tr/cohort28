@@ -15,4 +15,4 @@ Homework Hints:
     • Use LinkedList as internal implementation of queue in BlkQueue class
     • Look into classwork examples MessageBoxB or MessageBoxC to implement the proper synchronization logics.
 
-    • And don’t afraid, because each implementation is about ~40 lines of copy-paste from MessageBox and only about ~10 lines of really new code    <br/>
+    • And don’t afraid, because each implementation is about ~40 lines of copy-paste from MessageBox and only about ~10 lines of really new code  

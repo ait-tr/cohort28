@@ -4,6 +4,13 @@
 	"homework": "homework.md",
 	"code": [
 		"code/src/homework/ExecutorGroupSum.java",
-		"code/src/homework/ThreadGroupSum.java"
+		"code/src/homework/ThreadGroupSum.java",
+		"code/src/MessageBox.java",
+		"code/src/MessageBoxA.java",
+		"code/src/MessageBoxB.java",
+		"code/src/MessageBoxC.java",
+		"code/src/Receiver.java",
+		"code/src/Sender.java",
+		"code/src/SenderReceiverAppl.java"
 	]
 }
