@@ -3,14 +3,11 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/ExecutorGroupSum.java",
-		"code/src/homeworks/ThreadGroupSum.java",
-		"code/src/MessageBox.java",
-		"code/src/MessageBoxA.java",
-		"code/src/MessageBoxB.java",
-		"code/src/MessageBoxC.java",
-		"code/src/Receiver.java",
-		"code/src/Sender.java",
-		"code/src/SenderReceiverAppl.java"
+		"code/todo_appl/dao/ToDoList.java",
+		"code/todo_appl/dao/ToDoListImpl.java",
+		"code/todo_appl/model/Menu.java",
+		"code/todo_appl/model/Task.java",
+		"code/todo_appl/ToDoAppl.java"
+
 	]
 }
