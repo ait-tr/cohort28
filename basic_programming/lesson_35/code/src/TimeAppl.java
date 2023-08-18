@@ -10,9 +10,8 @@ import java.util.Locale;
 public class TimeAppl {
     // нет полей, не описали
 
-
     // методы
-    public static void main(String[] args) { // исполняемый метод
+    public static void main(String[] args) { // Исполняемый метод
         //LocalDate, LocalTime, LocalDateTime - хотим узнать у компьютера внутри нашей программы
         // Обратились к классу и создали перменную, кот. отвечает за объект из этого класса
         LocalDate currentDate = LocalDate.now();

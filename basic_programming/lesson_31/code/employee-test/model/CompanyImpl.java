@@ -18,7 +18,7 @@ public class CompanyImpl implements Company {
     public boolean addEmployee(Employee employee) {
         // если сотрудник не null ИЛИ size еще не равен длине массива ИЛИ такой сотрудник уже есть, ТО
         if (employee == null || size == employees.length || findEmployee((int) employee.getId()) != null) {
-            return false; // возвращаем fals, т.к. его нельзя добавить!
+            return false; // возвращаем false, т.к. его нельзя добавить!
         }
         employees[size++] = employee; // принимаем сотрудника
         return true; // возвращаем true
