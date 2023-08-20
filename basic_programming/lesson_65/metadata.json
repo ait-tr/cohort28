@@ -11,6 +11,7 @@
 		"code/src/MessageBoxC.java",
 		"code/src/Receiver.java",
 		"code/src/Sender.java",
-		"code/src/SenderReceiverAppl.java"
+		"code/src/SenderReceiverAppl.java",
+		"code/src/solution/BlkQueueImpl.java"
 	]
 }
