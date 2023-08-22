@@ -1,0 +1,117 @@
+<html lang="en">
+    <head>
+        <style>
+            /* по имени тэга */
+            h1 {
+                text-align: center;
+            }
+
+            /* по имени класса */
+            .bg-color {
+                background-color: azure;
+            }
+
+            /* по id */
+            #header {
+                font-size: 25px;
+            }
+        </style>
+        <!-- 
+            ./ - остаться в той же директории
+            ../ - выйти во внешнюю директорию
+         -->
+        <link rel="stylesheet" href="./style.css">
+        <title>HTML (part 2)</title>
+    </head>
+    <body>
+        <!-- Принцип позиционирования блочных и строчных элементов -->
+        <h1>
+            Hello world!
+            <h2>Hello again!</h2>
+        </h1>
+        <a href="http://www.google.com/">
+            Ссылка на Гугл
+        </a>
+
+        <a href="http://www.facebook.com/"> &nbsp; Ссылка на Фейсбук </a>
+
+
+        <!-- Блочный элемент по умолчанию (div) -->
+        <!-- Строчный элемент по умолчанию (span) -->
+        <div>
+            <p>
+                This is a text from paragraph
+                <span> and span </span>
+            </p>
+        </div>
+
+        <!-- Семантический подход: -->
+
+        <!-- Шапка сайта -->
+        <header>
+            <!-- Навигационное меню -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Основной контент сайта -->
+        <main>
+            <section>
+                <h1>My First Blog Post</h1>
+                <p>Posted by John on August 22, 2023</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi, dicta.
+                </p>
+                <p><a href="/blog/1">Read more</a></p>
+            </section>
+
+            <section>
+                <h1>My Second Blog Post</h1>
+                <p>Posted by John on August 23, 2023</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi, dicta.
+                </p>
+                <p><a href="/blog/2">Read more</a></p>
+            </section>
+
+            <section class="bg-color color1">
+                <h1 id="header">My Third Blog Post</h1>
+                <p>Posted by John on August 24, 2023</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi, dicta.
+                </p>
+                <p><a href="/blog/3">Read more</a></p>
+            </section>
+        </main>
+        <!-- Подвал сайта -->
+        <footer style="color: blue; font-size: 20px" class="bg-color">
+            <p>&copy; 2023 My Blog</p>
+        </footer>
+
+        <!-- CSS -->
+        <!-- 
+                Как можно настроить стилистику для элемента ?
+            1. По имени тэга (настройку получат все тэги с данным названием);
+            2. По имени класса элемента (настройку получат все тэги с данным классом);
+            3. По id элемента (настройку получит только тэг с данным id).
+
+                Где можно настроить стилистику для элемента ?
+            1. Inline стили (указываются в качестве значения атрибута style);
+            2. Internal стили (указываются в качестве контента тэга style);
+            3. External стили (указываются в отдельном файле).
+         -->
+    </body>
+</html>
