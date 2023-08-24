@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Raleway:ital,wght@0,100;0,400;0,500;1,100;1,400;1,500&display=swap");
+
+* {
+    /* Внешние отступы элемента */
+    margin: 0;
+    /* Внутренние отступы */
+    padding: 0;
+}
+
+body {
+    /* Фоновый цвет */
+    background-color: whitesmoke;
+    /* Шрифт */
+    font-family: 'Raleway', sans-serif;
+    /* Толщина шрифта */
+    font-weight: 500;
+    /* Курсивный шрифт */
+    font-style: italic;
+}
+
+.header {
+    /* Высота */
+    height: 400px;
+    /* Фоновое изображение */
+    background-image: url('./Images/coffee-bgnd.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-style: normal;
+    font-size: 100px;
+    text-align: center;
+    color: rgba(3, 150, 100, 0.75);
+    padding-top: 120px;
+}
+
+.main {
+    position: relative;
+}
+
+.left, .right, .center {
+    position: absolute;
+    width: 32%;
+    top: 15px;
+    /* 
+        top
+        right
+        bottom
+        left
+    */
+}
+
+.left {
+    left: 1%;
+}
+
+.right {
+    right: 1%;
+}
+
+.center {
+    left: 34%;
+}
