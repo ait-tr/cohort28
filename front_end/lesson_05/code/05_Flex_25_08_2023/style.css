@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Poller One', cursive;
+    background-image: url('./Images/sky.jpg');
+    color: #eedb00;
+    /* Фиксация фона */
+    background-attachment: fixed;
+}
+
+header {
+    background-color: rgba(60, 69, 67, .6);
+    border-radius: 15px 15px 0 0;
+}
+
+footer {
+    background-color: rgba(60, 69, 67, .6);
+    border-radius: 0 0 15px 15px;
+    height: 6em;
+    position: relative;
+    clear: both;
+    /* 
+        em      -       от значения свойства font-size элемента
+        rem     -       от значения свойства font-size тэга <html> (16px)
+                        не зависит от размера шрифтов родителей
+    */
+}
+
+nav > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 5px;
+    left: 40px;
+}
+
+li {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    padding: .5em 0;
+}
+
+.left {
+    float: left;
+    width: 25%;
+    margin: 5px 10px 0 5px;
+}
+
+.right {
+    float: right;
+    width: 50%;
+    margin: 5px 5px 0;
+    border: 1px solid #eedb00;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.right > h2 {
+    text-align: center;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.right > img {
+    width: 32%;
+}
+
+.bottomLeft {
+    border-bottom-left-radius: 15px;
+}
+
+.bottomRight {
+    border-bottom-right-radius: 15px;
+}
+
+.farGalaxy {
+    /* font-size: 2em; */
+}

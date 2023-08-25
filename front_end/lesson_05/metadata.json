@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/05_Flex_25_08_2023/index.html",
+    "code/05_Flex_25_08_2023/style.css"
+  ],
+  "video": "",
+  "etc": ""
+}
