@@ -1,0 +1,66 @@
+body {
+    height: 2000px;
+}
+
+.main {
+    margin-top: 12%;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.item1 {
+    background-color: red;
+    bottom: 0;
+    left: 13.5%;
+}
+
+.item2 {
+    background-color: orange;
+    top: 0;
+    left: 25.7%;
+}
+
+.item3 {
+    background-color: yellow;
+    left: 41.9%;
+    top: 41.7%;
+}
+
+.item4 {
+    background-color: green;
+    bottom: 7%;
+    right: 38%;
+}
+
+.item5 {
+    background-color: lightblue;
+    top: 22%;
+    right: 23.4%;
+}
+
+.item6 {
+    background-color: blue;
+    bottom: 7.5%;
+    right: 15%;
+}
+
+.item7 {
+    background-color: purple;
+    top: 31%;
+    right: 5.3%;
+}
+
+.item8 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: darkorange;
+}
