@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/12_JS_TODO_06_09_2023/index.html",
+    "code/12_JS_TODO_06_09_2023/style.css",
+    "code/12_Promises_07_09_2023/script.js",
+    "code/13_Promises_07_09_2023/index.html",
+    "code/13_Promises_JSONPlaceHolder_07_09_2023/script.js",
+    "code/13_Promises_JSONPlaceHolder_07_09_2023/index.html",
+    "code/13_Promises_JSONPlaceHolder_07_09_2023/script.js"
+  ],
+  "video": "",
+  "etc": ""
+}
