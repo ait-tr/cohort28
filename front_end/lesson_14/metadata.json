@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/13_HW_08_09_2023/index.html",
+    "code/13_HW_08_09_2023/script.js",
+    "code/14_Async_Await_08_09_2023/index.html",
+    "code/14_Async_Await_08_09_2023/script.js"
+  ],
+  "video": "",
+  "etc": ""
+}
