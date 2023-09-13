@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.postCard {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.postTitle {
+    text-align: center;
+    font-size: 18px;
+}
+
+.postBody {
+    text-align: justify;
+    text-indent: 25px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
