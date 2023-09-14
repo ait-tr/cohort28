@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/15_JS_WeatherApp_12_09_2023/index.html",
+    "code/15_JS_WeatherApp_12_09_2023/script.js",
+    "code/16_react_intro/src/components/ComponentA.js",
+    "code/16_react_intro/src/App.js"
+  ],
+  "video": "",
+  "etc": ""
+}
