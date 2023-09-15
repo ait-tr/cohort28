@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/16_react_intro/src/App.js",
+    "code/16_react_intro/src/components/ComponentA.js",
+    "code/16_react_intro/src/components/ClassComponent.js",
+    "code/16_react_intro/src/components/Counter.js",
+    "code/17_react_ts_15_09_2023/src/App.tsx",
+    "code/17_react_ts_15_09_2023/src/components/theoryTypeScript.ts",
+    "code/17_react_ts_15_09_2023/src/components/Counter.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}
