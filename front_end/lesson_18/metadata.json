@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/17_homework_18_classwork_19_09_2023/src/App.tsx",
+    "code/17_homework_18_classwork_19_09_2023/src/App.css",
+    "code/17_homework_18_classwork_19_09_2023/src/index.tsx",
+    "code/17_homework_18_classwork_19_09_2023/src/index.css",
+    "code/17_homework_18_classwork_19_09_2023/src/components/TodoList.tsx",
+    "code/17_homework_18_classwork_19_09_2023/src/components/TodoList.css"
+  ],
+  "video": "",
+  "etc": ""
+}
