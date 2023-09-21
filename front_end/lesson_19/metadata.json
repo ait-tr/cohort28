@@ -1,0 +1,16 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/19_useeffect_21_09_2023/src/App.tsx",
+    "code/19_useeffect_21_09_2023/src/App.css",
+    "code/19_useeffect_21_09_2023/src/index.tsx",
+    "code/19_useeffect_21_09_2023/src/index.css",
+    "code/19_useeffect_21_09_2023/src/components/ClassComponent.tsx",
+    "code/19_useeffect_21_09_2023/src/components/Counter.tsx",
+    "code/19_useeffect_21_09_2023/src/components/FuncComponent.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}
