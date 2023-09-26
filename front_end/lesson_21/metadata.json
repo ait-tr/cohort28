@@ -1,0 +1,33 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/19_useeffect_21_09_2023/src/App.tsx",
+    "code/19_useeffect_21_09_2023/src/App.css",
+    "code/19_useeffect_21_09_2023/src/index.tsx",
+    "code/19_useeffect_21_09_2023/src/index.css",
+    "code/19_useeffect_21_09_2023/src/components/ClassComponent.tsx",
+    "code/19_useeffect_21_09_2023/src/components/Counter.tsx",
+    "code/19_useeffect_21_09_2023/src/components/FuncComponent.tsx",
+    "code/19_useeffect_21_09_2023/src/components/Users.tsx",
+    "code/20_react_router_dom_22_09_2023/src/App.tsx",
+    "code/20_react_router_dom_22_09_2023/src/App.css",
+    "code/20_react_router_dom_22_09_2023/src/index.tsx",
+    "code/20_react_router_dom_22_09_2023/src/index.css",
+    "code/20_react_router_dom_22_09_2023/src/components/Comments.tsx",
+    "code/20_react_router_dom_22_09_2023/src/components/Layout.tsx",
+    "code/20_react_router_dom_22_09_2023/src/components/Posts.tsx",
+    "code/20_react_router_dom_22_09_2023/src/components/Todo.tsx",
+    "code/20_react_router_dom_22_09_2023/src/components/Users.tsx",
+    "code/21_star_wars_26_09_2023/src/App.tsx",
+    "code/21_star_wars_26_09_2023/src/App.css",
+    "code/21_star_wars_26_09_2023/src/index.tsx",
+    "code/21_star_wars_26_09_2023/src/index.css",
+    "code/21_star_wars_26_09_2023/src/components/Header.tsx",
+    "code/21_star_wars_26_09_2023/src/components/Navigation.tsx",
+    "code/21_star_wars_26_09_2023/src/components/NavItem.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}
