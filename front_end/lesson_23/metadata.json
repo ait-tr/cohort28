@@ -1,0 +1,35 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/22_star_wars_27_09_2023/src/utils.ts",
+    "code/22_star_wars_27_09_2023/src/App.tsx",
+    "code/22_star_wars_27_09_2023/src/App.css",
+    "code/22_star_wars_27_09_2023/src/index.tsx",
+    "code/22_star_wars_27_09_2023/src/index.css",
+    "code/22_star_wars_27_09_2023/src/components/AboutMe.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Contact.tsx",
+    "code/22_star_wars_27_09_2023/src/components/DreamTeam.tsx",
+    "code/22_star_wars_27_09_2023/src/components/FarGalaxy.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Footer.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Friend.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Header.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Hero.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Home.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Main.tsx",
+    "code/22_star_wars_27_09_2023/src/components/Navigation.tsx",
+    "code/22_star_wars_27_09_2023/src/components/NavItem.tsx",
+    "code/22_star_wars_27_09_2023/src/components/StarWars.tsx",
+    "code/23_redux_28_09_2023/src/App.tsx",
+    "code/23_redux_28_09_2023/src/index.tsx",
+    "code/23_redux_28_09_2023/src/components/Counter.tsx",
+    "code/23_redux_28_09_2023/src/redux/counterReducer.ts",
+    "code/23_redux_28_09_2023/src/redux/store.ts",
+    "code/23_redux_28_09_2023/src/redux/types/Action.ts",
+    "code/23_redux_28_09_2023/src/redux/types/CounterState.ts"
+
+  ],
+  "video": "",
+  "etc": ""
+}
