@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/24_redux_29_09_2023/src/App.tsx",
+    "code/24_redux_29_09_2023/src/index.tsx",
+    "code/24_redux_29_09_2023/src/components/Counter.tsx",
+    "code/24_redux_29_09_2023/src/components/Sandwich.tsx",
+    "code/24_redux_29_09_2023/src/redux/reducers/booksReducer.ts",
+    "code/24_redux_29_09_2023/src/redux/reducers/counterReducer.ts",
+    "code/24_redux_29_09_2023/src/redux/reducers/sandwichReducer.ts",
+    "code/24_redux_29_09_2023/src/redux/store.ts",
+    "code/24_redux_29_09_2023/src/redux/types/Action.ts",
+    "code/24_redux_29_09_2023/src/redux/types/State.ts"
+    
+  ],
+  "video": "",
+  "etc": ""
+}
