@@ -1,0 +1,25 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/25_redux_rtk_02_10_2023/src/App.tsx",
+    "code/25_redux_rtk_02_10_2023/src/index.tsx",
+    "code/25_redux_rtk_02_10_2023/src/components/BooksPage.tsx",
+    "code/25_redux_rtk_02_10_2023/src/components/Counter.tsx",
+    "code/25_redux_rtk_02_10_2023/src/components/CreateBook.tsx",
+    "code/25_redux_rtk_02_10_2023/src/components/EditForm.tsx",
+    "code/25_redux_rtk_02_10_2023/src/components/Sandwich.tsx",
+    "code/25_redux_rtk_02_10_2023/src/redux/reducers/booksReducer.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/reducers/counterReducer.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/reducers/sandwichReducer.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/slices/counterSlice.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/store.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/storeRTK.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/types/Action.ts",
+    "code/25_redux_rtk_02_10_2023/src/redux/types/State.ts"
+    
+  ],
+  "video": "",
+  "etc": ""
+}
