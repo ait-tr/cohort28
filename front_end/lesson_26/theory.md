@@ -1,0 +1,1 @@
+https://habr.com/ru/articles/498860/ - теория для лучшего понимания Redux
