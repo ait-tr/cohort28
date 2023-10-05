@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/26_x_o_04_10_2023/src/App.tsx",
+    "code/26_x_o_04_10_2023/src/App.css",
+    "code/26_x_o_04_10_2023/src/index.tsx",
+    "code/26_x_o_04_10_2023/src/index.css",
+    "code/26_x_o_04_10_2023/src/components/Board.tsx",
+    "code/26_x_o_04_10_2023/src/components/Square.tsx",
+    "code/26_x_o_04_10_2023/src/store/boardSlice.ts",    
+    "code/26_x_o_04_10_2023/src/store/index.ts"
+  ],
+  "video": "",
+  "etc": ""
+}
