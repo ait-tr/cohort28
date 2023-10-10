@@ -11,7 +11,7 @@ for such services. Servers are classified by the services they provide (WWW serv
 <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhoG86pcBF1VPHbUY7AXflXzAykTr7RlqeW8OTp18SJ0aOXGPuL9kFYy1uQO76aBD-B8B10GNkYY6s38FhilYP0johqQTpsBoXIiCQZDNkcS47FGLaErrdFr2OG7cgimikOyeCpUVRz5zHVbZG8JYJGCk5JPuPzX9E4WUYT1KHNqpcDr2eR2BME5Y4uOA=s16000" width=50% height=50%>
 
 
-Клиент-сервер — это структура приложения, которая предполанает наличие двух взаимоотношения взаимодействующих программ в приложении: поставщика ресурсов или услуг (сервер), и службы-инициатора запроса (клиент).
+Клиент-сервер — это структура приложения, которая предполанает наличие в приложении двух взаимодействующих пронрамных компонентов: поставщика ресурсов или услуг (сервер), и службы-инициатора запроса (клиент).
 Серверный компонент предоставляет функцию или услугу одному или нескольким клиентам, которые инициируют запросы.
 Серверы классифицируются по предоставляемым ими услугам (WWW-сервер, файловый сервер, почтовый сервер и т. д.).
 
