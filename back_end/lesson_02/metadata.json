@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20231012_1/src/Main.java",
+"code/demo20231012_1/src/model/User.java",
+"code/demo20231012_1/src/repositories/CrudRepository.java",
+"code/demo20231012_1/src/repositories/UserRepositoryFileImpl.java",
+"code/demo20231012_1/src/repositories/UserRepositoryListImpl.java",
+"code/demo20231012_1/src/UserRegistration.java"
+]
+}

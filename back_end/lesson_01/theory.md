@@ -23,8 +23,7 @@ for such services. Servers are classified by the services they provide (WWW serv
 
 ## HTTP - Hypertext Transfer Protocol
 
-[HTTP en](https://developer.mozilla.org/en-US/docs/Web/HTTP)  
-
+[HTTP en](https://developer.mozilla.org/en-US/docs/Web/HTTP)    
 [HTTP ru](https://developer.mozilla.org/ru/docs/Web/HTTP)
 
 
@@ -50,7 +49,7 @@ HTTP работает по модели запрос-ответ. В общени
   - https://www.google.com/search?q=pizza https - протокол, www.google.com - host, /search - path, q=pizza - запрос (query)
   - https://en.wikipedia.org/wiki/URL#See_also  https - протокол, en.wikipedia.org - host, wiki/URL - path, See_also - fragment 
 
-**Метод**(так же иногда называемый verb) - это действие которое клиент ожидает от сервера к которому он обращается.
+**Метод** (так же иногда называемый verb) - это действие которое клиент ожидает от сервера к которому он обращается.
 Два наиболее популярных метода: GET и POST. Первый используется, чтобы получить какую-то информацию с сервера.
 Например когда открывате браузер, то браузер делает GET запрос.
 
