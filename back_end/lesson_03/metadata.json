@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo20231017_maven/src/main/java/org/example/Main.java",
+"code/dz20231017_2/src/Main.java",
+"code/dz20231017_2/src/models/Student.java",
+"code/dz20231017_2/src/repositories/StudentRepository.java",
+"code/dz20231017_2/src/repositories/StudentRepositoryFileImpl.java",
+"code/dz20231017_2/src/servises/StudentService.java",
+"code/dz20231017_2/src/servises/StudentServiceImp.java"
+]
+}
