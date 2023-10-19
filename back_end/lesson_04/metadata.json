@@ -1,0 +1,30 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/demo19102023/src/controllers/UserController.java",
+"code/demo19102023/src/controllers/UserControllerConsoleImp.java",
+"code/demo19102023/src/Main.java",
+"code/demo19102023/src/model/User.java",
+"code/demo19102023/src/repositories/CrudRepository.java",
+"code/demo19102023/src/repositories/UserRepository.java",
+"code/demo19102023/src/repositories/UserRepositoryFileImpl.java",
+"code/demo19102023/src/repositories/UserRepositoryListImpl.java",
+"code/demo19102023/src/services/UserService.java",
+"code/demo19102023/src/services/UserServiceImpl.java",
+"code/demo19102023_2/src/main/java/de/ait/controllers/UserController.java",
+"code/demo19102023_2/src/main/java/de/ait/controllers/UserControllerConsoleImp.java",
+"code/demo19102023_2/src/main/java/de/ait/Main.java",
+"code/demo19102023_2/src/main/java/de/ait/model/User.java",
+"code/demo19102023_2/src/main/java/de/ait/repositories/CrudRepository.java",
+"code/demo19102023_2/src/main/java/de/ait/repositories/UserRepository.java",
+"code/demo19102023_2/src/main/java/de/ait/repositories/UserRepositoryFileImpl.java",
+"code/demo19102023_2/src/main/java/de/ait/repositories/UserRepositoryListImpl.java",
+"code/demo19102023_2/src/main/java/de/ait/services/UserService.java",
+"code/demo19102023_2/src/main/java/de/ait/services/UserServiceImpl.java",
+"code/demo19102023_2/src/test/java/de/ait/repositories/UserRepositoryFileImplTest.java",
+"code/dz20231019_dz1/src/Main.java",
+"code/dz20231019_dz1/src/Person.java"
+]
+}
