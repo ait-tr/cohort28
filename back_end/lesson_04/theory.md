@@ -60,6 +60,8 @@ When talking about Unit Test structure often use AAA abbreviation: arrange, act,
 
 ### Essential Junit 5 Annotation / основные аннотации Junit 5
 
+|                  |                                             |                                    |
+|------------------|---------------------------------------------|------------------------------------|
 |@Test             |Denotes that a method is a test method       | Определяет метод, который тестируем|
 |@ParameterizedTest|Denotes that a method is a parameterized test| Определяет параметризованный тест|
 |@DisplayName      |Declares a custom display name for the test class or test method|Определяет, как отображается тест в логе|
