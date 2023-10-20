@@ -10,6 +10,7 @@ Unit Tests are written for test the smallest unit of our software possible, usua
 - Enhanced Collaboration and Communication among Developers 
 - Helps to clearly defined and understand functional requirements for unit 
 
+<br/>
 
 - Облегчает обслуживание и рефакторинг кода.  
 - Помогает обнаружить ошибоки на ранних стадиях  
@@ -24,6 +25,7 @@ Unit Tests are written for test the smallest unit of our software possible, usua
 - Test Small Parts of the Codebase  
 - Repeatable and Consistent Results
 
+<br/>
 
 - Изоляция компонентов   
 - Тестирование небольших частей кода, обычно методов  
@@ -44,11 +46,11 @@ In the second section the tested method is called with the data that was prepare
 In the last section Unit Test asserts hard-coded expected value against the actual one.
 When talking about Unit Test structure often use AAA abbreviation: arrange, act, assertions.   
 
-
+<br/>
 
 Каждый модульный тест имеет одинаковую и очень простую структуру:
 
-- set up (arrange)    
+- поднотовка (arrange)    
 - выполнение тестового иетода (act)   
 - сравнение реального результата с ожидаемым (assertions)  
 
