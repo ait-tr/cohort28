@@ -79,9 +79,6 @@ etc.
 
 ## Как добавить зависимость в Maven
 
-
-### Вариант 2. Вручную. Работает для любых IDE и даже без них
-
 1. Ищем библитеку по названию в [https://mvnrepository.com/](https://mvnrepository.com/)
 2. Копируем сниппет для Maven в pom.xml  межлу тегами   \<dependencies> ...  \</dependencies>
 
