@@ -66,3 +66,15 @@ public Scanner scanner() {
   * `applicationContext.getBean(ТипНужногоБина.class)`
   * `applicationContext.getBean(Id-нужного-бина, ТипНужногоБина.class)`
 
+
+## Использование .proppety файла
+
+Файл настройки (как правило application.property) содержит настройки приложения и позволчет менять свойства приложения (пути, пароли, поведение и т.д.) без перекомпиляции приложения.  
+Файл application.properties как правило, должен лежать в папке \resources проекта  
+Для использования в приложение используеи аннотации 
+`@PropertySource("classpath:application.properties")`  - обычно над классом AppConfig  
+@Value("${имя.свойства}") - помечая параметр метода  
+
+
+
+
