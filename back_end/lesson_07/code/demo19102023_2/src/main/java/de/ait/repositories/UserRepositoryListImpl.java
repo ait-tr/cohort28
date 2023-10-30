@@ -9,13 +9,18 @@ import java.util.ArrayList;
 import java.util.List;
 @Component("userRepositoryList")
 @Qualifier("userRepositoryList")
+@Lazy
 public class UserRepositoryListImpl implements UserRepository {
     private  Long  currentID=1L;
     private final List<User> users = new ArrayList<>();
 
+    {
+        System.out.println("List repository start");
+    }
 
     @Override
     public void save(User user) {
+        System.out.println("save to list repo");
         users.add(user);
         user.setId(currentID++);
     }
