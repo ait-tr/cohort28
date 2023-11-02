@@ -1,0 +1,20 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+"code/city/src/main/java/de/example/city/CityApplication.java",
+"code/city/src/main/java/de/example/city/configuration/AppConfiguration.java",
+"code/city/src/main/java/de/example/city/contoller/CityController.java",
+"code/city/src/main/java/de/example/city/model/City.java",
+"code/city/src/main/java/de/example/city/repository/CityRepository.java",
+"code/city/src/main/java/de/example/city/repository/CityRepositoryImpl.java",
+"code/city/src/main/java/de/example/city/repository/CrudRepository.java",
+"code/city/src/main/java/de/example/city/service/CityService.java",
+"code/city/src/main/java/de/example/city/service/CityServiceImpl.java",
+"code/city/src/test/java/de/example/city/CityApplicationTests.java",
+"code/lombok_demo/src/main/java/de/ait/demo/City.java",
+"code/lombok_demo/src/main/java/de/ait/demo/DemoApplication.java",
+"code/lombok_demo/src/test/java/de/ait/demo/DemoApplicationTests.java"
+]
+}
