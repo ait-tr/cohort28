@@ -1,0 +1,18 @@
+POST http://localhost:8080/cities
+Content-Type: application/json
+
+{
+  "name": "Potsdam",
+  "country": "Germany",
+  "population": 100000
+}
+
+
+###
+### GET ALL CITIES
+GET http://localhost:8080/cities
+Accept: application/json
+
+
+
+
