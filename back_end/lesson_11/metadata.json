@@ -14,5 +14,6 @@ code/city/src/main/java/de/example/city/CityApplication.java",
 "code/city/src/main/java/de/example/city/repository/CrudRepository.java",
 "code/city/src/main/java/de/example/city/service/CityService.java",
 "code/city/src/main/java/de/example/city/service/CityServiceImpl.java",
-"code/city/src/test/java/de/example/city/CityApplicationTests.java"]
+"code/city/src/test/java/de/example/city/CityApplicationTests.java"
+]
 }
