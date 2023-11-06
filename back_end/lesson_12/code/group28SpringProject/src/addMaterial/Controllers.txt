@@ -1,0 +1,24 @@
+наш сайт mycorp.com
+
+mycorp.com/clients - get запрос
+- то запусти метод
+public ClientsResponse getAllClients()
+
+mycorp.com/newClient?name="John" - post запрос
+
+то запусти
+public AddResponse addNewClient(String name)
+
+
+mycorp.com/newClient?nameOld="John"&&nameNew="Bill" - put запрос
+
+то запусти
+public ChangeResponse updateClient(String nameOld, String nameNew)
+
+
+
+mycorp.com/newClient?nameOld="John" - delete запрос
+
+то запусти
+public DeleteResponse deleteClient(String name)
+
