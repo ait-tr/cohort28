@@ -1,0 +1,69 @@
+Операции с пользователем:
+
+- Создать user
+- Получить данные о пользователе
+- Получить данные о всех пользователях
+- сделать update для user
+- сделать пользователя "неактивным / заблокированным"
+
+
+Операции с задачами
+
+- создать задачу
+- Получить данные о задаче
+- Получить данные о всех задачах
+- Получить данные о всех задачах конкретного пользователя
+- Сделать update для задачи (только description)
+- удалить задачу
+
+Список контроллеров:
+
+User controllers:
+
+- POST "/api/user"
+JSON { все поля user}
+public UserDTO addUser(User newUser){}
+
+- GET "/api/user?id=...."
+public UserDTO findUserById(Integer id){}
+
+- GET "/api/user"
+public List<UserDTO> findAllUsers(){}
+
+- PUT "/api/user/id"
+JSON {все поля user которые подлежат изменению}
+public UserDTO updateUser(User updateUser){}
+
+- сделать пользователя "неактивным / заблокированным"
+
+
+ToDo controllers:
+
+- Получить данные о задачах
+- Получить данные о всех задачах
+- Получить данные о всех задачах конкретного пользователя
+- Сделать update для задачи (только description)
+- удалить задачу
+
+ToDo controllers:
+
+- POST "/api/todo"
+JSON { все поля todo}
+public TodoDTO addTodo(ToDo newToDo){}
+
+- GET "/api/todo?id=...."
+public TodoDTO findTodoById(Integer id){}
+
+- GET "/api/todo"
+public List<TodoDTO> findAllTodos(){}
+
+- GET "/api/todo?idUser=...."
+public List<TodoDTO> findTodoByUserId(Integer userId){}
+
+- PUT "/api/todo/id"
+JSON {все поля todo которые подлежат изменению}
+public TodoDTO updateTodo(ToDo updateToDo){}
+
+- DELETE "/api/todo?id=...."
+public boolean deleteTodoById(Integer id){}
+
