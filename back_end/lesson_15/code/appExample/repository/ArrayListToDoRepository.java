@@ -1,6 +1,6 @@
-package lesson14.appExample.repository;
+package lesson15.appExample.repository;
 
-import lesson14.appExample.entity.ToDo;
+import lesson15.appExample.entity.ToDo;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.Objects;
 import java.util.Optional;
 
 @Repository
-public class ArrayListToDoRepository implements ToDoRepository{
+public class ArrayListToDoRepository implements ToDoRepository {
 
     private Integer idSequence = 1;
     private List<ToDo> database = new ArrayList<>();

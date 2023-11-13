@@ -1,4 +1,4 @@
-package lesson14.appExample.entity;
+package lesson15.appExample.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

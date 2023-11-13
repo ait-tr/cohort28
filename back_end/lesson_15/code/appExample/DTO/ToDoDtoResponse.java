@@ -1,4 +1,4 @@
-package lesson14.appExample.DTO;
+package lesson15.appExample.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,16 +1,14 @@
-package lesson14.appExample.repository;
+package lesson15.appExample.repository;
 
-import lesson14.appExample.entity.ToDo;
-import lesson14.appExample.entity.User;
+import lesson15.appExample.entity.User;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @Repository
-public class ArrayListUserRepository implements UserRepository{
+public class ArrayListUserRepository implements UserRepository {
 
     private Integer idSequence = 1;
     private List<User> database = new ArrayList<>();
@@ -32,6 +30,13 @@ public class ArrayListUserRepository implements UserRepository{
     public Optional<User> findById(Integer id) {
         return database.stream()
                 .filter(entity -> entity.getId().equals(id))
+                .findFirst();
+    }
+
+    @Override
+    public Optional<User> findByEmail(String email) {
+        return database.stream()
+                .filter(entity -> entity.getEmail().equals(email))
                 .findFirst();
     }
 

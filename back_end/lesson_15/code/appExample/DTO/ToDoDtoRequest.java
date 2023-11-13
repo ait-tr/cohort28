@@ -1,10 +1,7 @@
-package lesson14.appExample.DTO;
+package lesson15.appExample.DTO;
 
-import lesson14.appExample.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor

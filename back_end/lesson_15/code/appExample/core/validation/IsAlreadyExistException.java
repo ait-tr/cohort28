@@ -1,4 +1,4 @@
-package lesson14.appExample.core.validation;
+package lesson15.appExample.core.validation;
 
 public class IsAlreadyExistException extends RuntimeException {
 

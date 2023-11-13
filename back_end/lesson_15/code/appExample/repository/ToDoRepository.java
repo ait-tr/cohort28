@@ -1,6 +1,6 @@
-package lesson14.appExample.repository;
+package lesson15.appExample.repository;
 
-import lesson14.appExample.entity.ToDo;
+import lesson15.appExample.entity.ToDo;
 
 import java.util.List;
 import java.util.Optional;

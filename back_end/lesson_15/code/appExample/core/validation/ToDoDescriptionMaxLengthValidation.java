@@ -1,6 +1,6 @@
-package lesson14.appExample.core.validation;
+package lesson15.appExample.core.validation;
 
-import lesson14.appExample.DTO.ToDoDtoRequest;
+import lesson15.appExample.DTO.ToDoDtoRequest;
 
 public class ToDoDescriptionMaxLengthValidation {
 

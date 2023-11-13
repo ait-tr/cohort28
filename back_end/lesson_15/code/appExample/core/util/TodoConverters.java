@@ -1,12 +1,12 @@
-package lesson14.appExample.core.util;
+package lesson15.appExample.core.util;
 
-import lesson14.appExample.DTO.ToDoDtoRequest;
-import lesson14.appExample.DTO.ToDoDtoResponse;
-import lesson14.appExample.core.validation.NotFoundException;
-import lesson14.appExample.entity.ToDo;
-import lesson14.appExample.entity.User;
-import lesson14.appExample.repository.ToDoRepository;
-import lesson14.appExample.repository.UserRepository;
+import lesson15.appExample.DTO.ToDoDtoRequest;
+import lesson15.appExample.DTO.ToDoDtoResponse;
+import lesson15.appExample.core.validation.NotFoundException;
+import lesson15.appExample.entity.ToDo;
+import lesson15.appExample.entity.User;
+import lesson15.appExample.repository.ToDoRepository;
+import lesson15.appExample.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
