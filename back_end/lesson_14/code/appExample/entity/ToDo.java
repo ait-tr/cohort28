@@ -1,7 +1,14 @@
-package lesson13.appExample.entity;
+package lesson14.appExample.entity;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ToDo {
     private Integer id;
     private String title;

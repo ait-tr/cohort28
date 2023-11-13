@@ -1,4 +1,4 @@
-package lesson14.appExample.entity;
+package lesson14.appExample.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,12 +9,11 @@ import java.time.LocalDateTime;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
+public class ToDoDtoResponse {
     private Integer id;
-    private String username;
-    private String password;
-    private String email;
+    private String title;
+    private String description;
     private LocalDateTime creationDate;
-    private LocalDateTime lastVisitDate;
+    private Integer userId;
 
 }

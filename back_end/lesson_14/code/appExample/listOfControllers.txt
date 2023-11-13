@@ -22,19 +22,31 @@ User controllers:
 
 - POST "/api/user"
 JSON { все поля user}
-public UserDTO addUser(User newUser){}
+public UserDtoResponse addUser(UserDtoRequest newUserRequest){}
 
 - GET "/api/user?id=...."
-public UserDTO findUserById(Integer id){}
+public UserDtoResponse findUserById(Integer id){}
 
 - GET "/api/user"
-public List<UserDTO> findAllUsers(){}
+public List<UserDtoResponse> findAllUsers(){}
 
 - PUT "/api/user/id"
 JSON {все поля user которые подлежат изменению}
-public UserDTO updateUser(User updateUser){}
+public UserDtoResponse updateUser(UserDtoRequest updateUserRequest){}
 
 - сделать пользователя "неактивным / заблокированным"
+
+JSON {
+ "username" = "user1",
+ "password" = "Qwerty123",
+ "email" = "mail@gmail.com"
+}
+
+JSON {
+ "username" = "",
+ "password" = "Abc999",
+ "email" = ""
+}
 
 
 ToDo controllers:
