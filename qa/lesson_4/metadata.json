@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA28_PhoneBook/.gitignore",
+    "code/QA28_PhoneBook/build.gradle",
+    "code/QA28_PhoneBook/src/test/java/com/ait/phonebook/tests/TestBase.java",
+    "code/QA28_PhoneBook/src/test/java/com/ait/phonebook/tests/HomePageTests.java",
+    "code/QA28_PhoneBook/src/test/java/com/ait/phonebook/tests/CreateAccountTests.java",
+    "code/QA28_PhoneBook/src/test/java/FindElementTests.java",
+    "code/QA28_PhoneBook/src/test/java/TableTest.java"
+  ]
+}

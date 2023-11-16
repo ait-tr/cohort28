@@ -1,0 +1,15 @@
+.gradle/
+/build/
+/gradle/
+setting.gradle
+gradlew
+gradlew/
+
+*.idea
+out/
+*.bat
+*.jar
+*.properties
+
+*.log
+*.png
