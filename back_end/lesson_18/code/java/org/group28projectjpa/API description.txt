@@ -1,0 +1,208 @@
+Запросы от любого пользователя:
+
+1. Получение списка всех задач
+Method: GET
+URL: /api/tasks
+
+Request: -
+
+Response:
+[
+    {
+        "id": 1,
+        "taskName": "Task1",
+        "description": "Description Task1",
+        "createDate": ....,
+        "lastUpdate": ....,
+        "deadline": ......,
+        "status":   "Open"
+    },
+    {
+    }
+]
+
+2. Получение задачи по ID
+Method: GET
+URL: /api/tasks/{id}
+
+Response:
+    {
+        "id": 1,
+        "taskName": "Task1",
+        "description": "Description Task1",
+        "createDate": ....,
+        "lastUpdate": ....,
+        "deadline": ......,
+        "status":   "Open"
+    }
+
+Запросы для авторизованного пользователя:
+----------------------------------------
+
+1. Создать новую задачу
+Method: POST
+URL: /api/task
+
+Request body:
+[
+    {
+        "taskName": "Task1",
+        "description": "Description task1",
+        "deadline": "2023-08-10T10:00:00",
+        "managerName": "managername1"
+    }
+]
+
+Response:
+[
+    {
+        "id": 1,
+        "taskName": "Task1",
+        "description": "Description task1",
+        "createDate": "2023-08-08T20:56:00",
+        "lastUpdate": "2023-08-08T20:56:00",
+        "deadline": "2023-08-10T10:00:00",
+        "status": "Open"
+        "manager": {
+                "id": 1,
+                "managername": "managername1"
+                }
+    }
+]
+
+2. Редактировать задачу
+Method:PUT
+URL:/api/tasks
+
+Request body:
+[
+    {
+        "id": 1,
+        "taskName": "Task1",
+        "description": "Update description task1",
+        "deadline": "2023-08-10T10:00:00",
+        "status": "Close",
+        "managerName": "managername1"
+    }
+]
+
+Response:
+[
+    {
+        "id": 1,
+        "taskName": "Task1",
+        "description": "Update description task1",
+        "createDate": "2023-08-08T20:56:00",
+        "lastUpdate": "2023-08-08T21:10:00",
+        "deadline": "2023-08-10T10:00:00",
+        "status": "Close"
+        "manager": {
+                "id": 1,
+                "managername": "managername1"
+                }
+    }
+]
+
+3. Удалить задачу
+Method:Delete
+URL:/api/tasks/{id}
+
+Response: HTTP 204 No Content
+
+
+Запрос пользователя для регистрации:
+------------------------------------------
+
+1. Создать нового пользователя
+Method:POST
+URL:/api/managers
+
+Request body:
+[
+    {
+        "managername": "manager1",
+        "password": "passwordmanager1"
+    }
+]
+
+Response:
+[
+    {
+        "id": 1,
+        "managername": "manager1"
+    }
+]
+
+
+Запросы администратора:
+------------------------------------------
+
+1. Получение списка всех пользователей
+Method: GET
+URL:/api/admin/managers
+
+Response:
+[
+    {
+        "id": 1,
+        "managerName": "managerName1",
+        "email": "email1@gmail.com"
+        "createManagerDate":
+        "lastUpdate":
+    },
+    {
+        "id": 2,
+        "managerName": "managerName2",
+        "email": "email2@gmail.com"
+    },
+    ...
+]
+
+2. Получение пользователя по email
+Method: GET
+URL:/api/admin/managers/{email}
+
+Response:
+[
+    {
+        "id": 1,
+        "managerName": "managerName1",
+        "email": "email1@gmail.com"
+    }
+]
+
+3. Удалить пользователя по ID
+
+Method: DELETE
+URL:/api/admin/managers/{id}
+
+Response: HTTP 204 No Content
+
+
+
+4. Получить полный развернутый список всех задач
+
+Method: GET
+URL:/api/admin/tasks
+
+Response:
+
+[
+    {
+        "id": 1,
+        "taskName": "Task1",
+        "description": "Update description task1",
+        "createDate": "2023-08-08T20:56:00",
+        "lastUpdate": "2023-08-08T21:10:00",
+        "deadline": "2023-08-10T10:00:00",
+        "status": "Close"
+        "manager": {
+                "id": 1,
+                "managername": "managername1",
+                "email": "manager@gmail.com",
+                "createDate": "2023-08-08T20:56:00",
+                "lastUpdate": "2023-08-08T21:10:00"
+                }
+    }
+]
+
