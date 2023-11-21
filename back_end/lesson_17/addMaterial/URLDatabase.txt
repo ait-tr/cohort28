@@ -1,0 +1,25 @@
+jdbc:mysql://localhost:3306/mydatabase
+
+jdbc - протокол
+localhost - имя хоста
+3306 - порт
+mydatabase - путь
+
+Connection con = DriverManager.getConnection(url, user, password);
+
+БД	            Имя драйвера	                            Пример URL
+Oracle 8i	oracle.jdbc.driver.OracleDriver	                jdbc:oracle:thin:@localhost:1521:scorpian
+Oracle 9i	oracle.jdbc.driver.OracleDriver	                jdbc:oracle:thin:@localhost:1521:scorpian
+MySQL	    com.mysql.jdbc.Driver	                        jdbc:mysql://localhost:3306/scorpian
+MS Access	sun.jdbc.odbc.JdbcOdbcDriver	                jdbc:odbc: Driver={Microsoft Access Driver (*.mdb)}
+Sybase	    com.sybase.jdbc2.jdbc.SybDriver	                jdbc:sybase:Tds:scorpian:2638
+MS SQL	    com.microsoft.jdbc.sqlserver.SQLServerDriver	jdbc:microsoft:sqlserver://localhost:1433
+IBM DB2 	com.ibm.db2.jdbc.net.DB2Connection	            jdbc:db2://localhost:6789/scorpian
+H2	        org.h2.Driver	                                jdbc:h2:tcp://localhost/~/test
+
+
+Драйвер - это сущность, которая реализует определенные интерфейсы JDBC API для
+взаимодействия с сервером базы данных.
+
+Например, именно драйвер дает вам возможность открывать соединения и выполнять
+SQL - запросы и т.д.
