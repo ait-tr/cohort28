@@ -38,7 +38,7 @@
 8. Data structures 'Queue', 'Stack'. Custom ArrayDeque implementation. 
 9. Data structure 'Map'. Object.hashCode, HashMap implementation. 
 10. Trees, Binary Trees, Tree Map. 
-11. Graphs. Plractice.
+11. Graphs. Practice.
 
 ### Lambdas & Stream API
 1. Lambdas, Functional Interfaces, Method references. 
@@ -68,7 +68,7 @@
 ### Spring & Spring Boot
 1. Apache Maven, сборка проектов. 
 2. Принципы программирования: DRY, YAGNI, KISS, SOLID. 
-3. Reflections. Annotations.. 
+3. Reflections. Annotations. 
 4. Spring Framework: Introduction, Context and Beans 
 5. Spring Framework: Beans configuration 
 6. Spring Boot: Onion (Hexagonal) architecture 
@@ -77,4 +77,5 @@
 9. Spring Boot: JPA and databases 
 10. Spring Boot: validation 
 11. Spring Boot: logging and AOP basics 
-12. Spring Boot: swagger
+12. Spring Security: cookies and JWT
+Additional: Spring Boot: swagger, email sending
