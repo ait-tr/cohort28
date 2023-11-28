@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="User" verbose="1" >
+    <test name="User" >
+        <classes>
+            <class name="com.ait.phonebook.tests.CreateNewAccountTests" />
+            <class name="com.ait.phonebook.tests.LoginTests" />
+        </classes>
+    </test>
+
+</suite>
