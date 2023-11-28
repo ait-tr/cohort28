@@ -4,11 +4,11 @@
   "homework": "homework.md",
   "code": [
     "code/QA28_PhoneBook/build.gradle",
-    "code/QA29_Phonebook/src/main/java/com/ait/phonebook/fw/ApplicationManager.java",
-    "code/QA29_Phonebook/src/main/java/com/ait/phonebook/fw/BaseHelper.java",
-    "code/QA29_Phonebook/src/main/java/com/ait/phonebook/fw/HomePageHelper.java",
-    "code/QA29_Phonebook/src/test/java/com/ait/phonebook/tests/TestBase.java",
-    "code/QA29_Phonebook/src/test/java/com/ait/phonebook/tests/HomePageTests.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/ApplicationManager.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/BaseHelper.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/HomePageHelper.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/TestBase.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/HomePageTests.java",
     "code/QA28_PhoneBook/src/test/resources/testng.xml",
     "code/QA28_PhoneBook/src/test/resources/regression.xml"
   ]
