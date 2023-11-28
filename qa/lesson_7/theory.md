@@ -11,6 +11,7 @@ one of the black box test design techniques that relates to dynamic analysis. Us
 - Для каждой комбинации условий определите, какие действия должны выполняться, а какие - нет; заполните соответствующие поля в данном столбце ниже соответствующей комбинации условий
 - Для каждого столбца составьте как минимум один контрольный пример, в котором выполняется заданная комбинация условий; тест должен проверить, выполняются ли соответствующие действия
 
+
 - Define all possible Conditions
 - Define all relevant Actions
 - Generate all possible combinations of conditions; each individual shape combination is a separate column in the decision table
