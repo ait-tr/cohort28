@@ -21,5 +21,6 @@ one of the black box test design techniques that relates to dynamic analysis. Us
 
 [Decision tables exercises](https://docs.google.com/spreadsheets/d/1Y7juU9kVFq_X7puM6WM9uFH3b-I5Df0b/edit?usp=sharing&ouid=116447005932578256378&rtpof=true&sd=true)
 
+[TestNG documentation](https://testng.org/doc/documentation-main.html)
 
 
