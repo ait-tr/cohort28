@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.9.xsd">
+
+    <changeSet id="create.table.roles" author="author">
+        <createTable tableName="roles">
+            <column name="id" type="INT" autoIncrement="true">
+            <constraints primaryKey="true" /> </column>
+            <column name="name" type="VARCHAR(70)" />
+        </createTable>
+    </changeSet>
+
+    <changeSet id="insert.default.roles" author="author">
+        <insert tableName="roles">
+            <column name="name" value="admin">
+            </column>
+        </insert>
+        <insert tableName="roles">
+            <column name="name" value="user"></column>
+        </insert>
+    </changeSet>
+
+
+<!--    <changeSet id="insert.default.newRoles" author="author">-->
+<!--        <insert tableName="roles">-->
+<!--            <column name="name" value="manager">-->
+<!--            </column>-->
+<!--        </insert>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="addFieldToTable" author="author2">-->
+<!--        <addColumn tableName="manager">-->
+<!--            <column name="isActive" type="boolean" defaultValue="true"> </column>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+<!--    <changeSet id="insert.default.manager" author="author">-->
+<!--        <insert tableName="manager">-->
+<!--            <column name="manager_name" value="Administrator"></column>-->
+<!--            <column name="password" value="pass12345"></column>-->
+<!--            <column name="email" value="admin@company.com"></column>-->
+<!--        </insert>-->
+
+<!--    </changeSet>-->
+
+</databaseChangeLog>
