@@ -39,8 +39,10 @@ public class AddNewContactTests extends TestBase{
     }
 
     @Test
-    public void addNewContactPositiveTest() {
+    public void addNewContactPositiveTest(Contact contact) {
         app.getContact().clickOnAddLink();
+
+        logger.info("Tests run with data: " + contact.toString());
 
         app.getContact().fillContactForm(new Contact()
                 .setName("Karl")
@@ -106,11 +108,14 @@ public class AddNewContactTests extends TestBase{
 
     @Test(dataProvider = "addNewContactFromCSV")
     public void addNewContactFromDataProviderCSWPositiveTest(Contact contact) {
+        logger.info("Tests run with data: " + contact.toString());
         app.getContact().clickOnAddLink();
 
         app.getContact().fillContactForm(contact);
 
         app.getContact().clickOnSaveButton();
-    }
 
+        Assert.assertTrue(app.getContact().isContactCreatedByText(contact.getName()));
+        Assert.assertTrue(app.getContact().isContactCreatedByText(contact.getPhone()));
+    }
 }
