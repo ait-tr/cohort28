@@ -1,0 +1,24 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/QA28_PhoneBook/build.gradle",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/ApplicationManager.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/BaseHelper.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/UserHelper.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/ContactHelper.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/fw/HomePageHelper.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/models/User.java",
+    "code/QA28_Phonebook/src/main/java/com/ait/phonebook/models/Contact.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/TestBase.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/CreateNewAccountTests.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/LoginTests.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/AddNewContactTests.java",
+    "code/QA28_Phonebook/src/test/java/com/ait/phonebook/tests/RemoveContactTests.java",
+    "code/QA28_PhoneBook/src/test/resources/testng.xml",
+    "code/QA28_PhoneBook/src/test/resources/regression.xml",
+    "code/QA28_PhoneBook/src/test/resources/logback.xml",
+    "code/QA28_PhoneBook/src/test/resources/contacts.csv"
+  ]
+}

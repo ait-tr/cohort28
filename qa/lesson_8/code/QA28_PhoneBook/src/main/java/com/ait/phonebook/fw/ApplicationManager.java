@@ -2,6 +2,7 @@ package com.ait.phonebook.fw;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
@@ -20,6 +21,11 @@ public class ApplicationManager {
 
     public void init() {
         if (browser.equalsIgnoreCase("chrome")) {
+   /*        "work browser in hide mode"
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            driver = new ChromeDriver(options);
+            options.addArguments("window-size=1800x900");*/
             driver = new ChromeDriver();
         } else if (browser.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
