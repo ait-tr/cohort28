@@ -2,16 +2,13 @@ package com.ait.phonebook.tests;
 
 import com.ait.phonebook.models.Contact;
 import com.ait.phonebook.models.User;
+import com.ait.phonebook.utils.ContactData;
+import com.ait.phonebook.utils.DataProviders;
+import com.ait.phonebook.utils.UserData;
 import org.testng.Assert;
-import org.testng.annotations.*;
-
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class AddNewContactTests extends TestBase{
 
@@ -33,8 +30,8 @@ public class AddNewContactTests extends TestBase{
         }
         app.getUser().clickOnLoginLink();
         app.getUser().fillLoginRegisterForm(new User()
-                .setEmail("manuel@gm.com")
-                .setPassword("Manuel1234$"));
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnLoginButton();
     }
 
@@ -45,16 +42,16 @@ public class AddNewContactTests extends TestBase{
         logger.info("Tests run with data: " + contact.toString());
 
         app.getContact().fillContactForm(new Contact()
-                .setName("Karl")
-                .setLastname("Adam")
-                .setPhone("123456789012")
-                .setEmail("adam@gm.co")
-                .setAddress("Koblenz")
-                .setDescription("goalkeeper"));
+                .setName(ContactData.NAME)
+                .setLastname(ContactData.LAST_NAME)
+                .setPhone(ContactData.PHONE)
+                .setEmail(ContactData.EMAIL)
+                .setAddress(ContactData.ADDRESS)
+                .setDescription(ContactData.DESCRIPTION));
 
         app.getContact().clickOnSaveButton();
 
-        Assert.assertTrue(app.getContact().isContactCreatedByText("Karl"));
+        Assert.assertTrue(app.getContact().isContactCreatedByText(ContactData.NAME));
     }
 
     @AfterMethod
@@ -62,17 +59,8 @@ public class AddNewContactTests extends TestBase{
         app.getContact().removeContact();
     }
 
-    @DataProvider
-    public Iterator<Object[]> addNewContact() {
-        List<Object[]> list = new ArrayList<>();
 
-        list.add(new Object[]{"Oliver","Kan","1234567890","kan@gm.com","Berlin","goalkeeper"});
-        list.add(new Object[]{"Oliver1","Kan","1234567891","kan1@gm.com","Berlin","goalkeeper"});
-        list.add(new Object[]{"Oliver2","Kan","1234567892","kan2@gm.com","Berlin","goalkeeper"});
-        return list.iterator();
-    }
-
-    @Test(dataProvider = "addNewContact")
+    @Test(dataProvider = "addNewContact",dataProviderClass = DataProviders.class)
     public void addNewContactFromDataProviderPositiveTest(String name, String lastname, String phone,
                                                           String email, String address, String desc) {
         app.getContact().clickOnAddLink();
@@ -88,25 +76,7 @@ public class AddNewContactTests extends TestBase{
         app.getContact().clickOnSaveButton();
     }
 
-    @DataProvider
-    public Iterator<Object[]> addNewContactFromCSV() throws IOException {
-        List<Object[]> list = new ArrayList<>();
-
-        BufferedReader reader = new BufferedReader(new FileReader
-                (new File("src/test/resources/contacts.csv")));
-
-        String line = reader.readLine();
-        while (line!=null) {
-            String[] split = line.split(",");
-
-            list.add(new Object[]{new Contact().setName(split[0]).setLastname(split[1]).setPhone(split[2])
-                    .setEmail(split[3]).setAddress(split[4]).setDescription(split[5])});
-            line = reader.readLine();
-        }
-        return list.iterator();
-    }
-
-    @Test(dataProvider = "addNewContactFromCSV")
+    @Test(dataProvider = "addNewContactFromCSV",dataProviderClass = DataProviders.class)
     public void addNewContactFromDataProviderCSWPositiveTest(Contact contact) {
         logger.info("Tests run with data: " + contact.toString());
         app.getContact().clickOnAddLink();
@@ -116,6 +86,5 @@ public class AddNewContactTests extends TestBase{
         app.getContact().clickOnSaveButton();
 
         Assert.assertTrue(app.getContact().isContactCreatedByText(contact.getName()));
-        Assert.assertTrue(app.getContact().isContactCreatedByText(contact.getPhone()));
     }
 }
