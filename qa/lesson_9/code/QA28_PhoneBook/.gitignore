@@ -1,0 +1,24 @@
+.gradle
+
+build/classes
+build/generated
+build/reports
+build/resources
+build/tmp
+
+/out/
+.idea/
+gradlew.bat
+/gradlew/
+/gradle/
+settings.gradle
+
+gradle-app.setting
+
+gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+*.log
+*.png
