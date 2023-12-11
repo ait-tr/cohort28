@@ -1,6 +1,7 @@
 package finterface.examples;
 
 
+
 @FunctionalInterface
 public interface FunctionalInterf {
     abstract public void abstractMethod();
