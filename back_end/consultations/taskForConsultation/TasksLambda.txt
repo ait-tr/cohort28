@@ -1,0 +1,18 @@
+Попробуйте решить такие задания:
+
+Задача: Отсортировать список строк в порядке убывания длины строк.
+List<String> words = Arrays.asList("apple", "banana", "pear", "orange", "grape");
+
+
+Задача: Преобразовать список строк в список их длин.
+List<String> words = Arrays.asList("apple", "banana", "pear", "orange", "grape");
+
+
+Задача: Найти максимальный элемент в списке чисел.
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+
+Задача: Фильтровать список строк по заданному условию.
+List<String> words = Arrays.asList("apple", "banana", "pear", "orange", "grape");
+
+Задача: Вычислить среднее значение списка чисел.
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
