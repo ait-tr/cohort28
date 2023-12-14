@@ -33,4 +33,12 @@ public class HomePage extends BasePage{
         clickWithJSExecutor(forms,0,300);
         return new SidePanel(driver);
     }
+
+    @FindBy(css = ".card:nth-child(1)")
+    WebElement elements;
+
+    public SidePanel getElements() {
+        clickWithJSExecutor(elements,0,300);
+        return new SidePanel(driver);
+    }
 }

@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class SidePanel extends BasePage{
+public class SidePanel extends BasePage {
 
     public SidePanel(WebDriver driver) {
         super(driver);
@@ -14,7 +14,7 @@ public class SidePanel extends BasePage{
     WebElement alerts;
 
     public AlertsPage selectAlerts() {
-        clickWithJSExecutor(alerts,0,300);
+        clickWithJSExecutor(alerts, 0, 300);
         return new AlertsPage(driver);
     }
 
@@ -22,7 +22,7 @@ public class SidePanel extends BasePage{
     WebElement browserWindows;
 
     public BrowserWindowsPage selectBrowserWindows() {
-        clickWithJSExecutor(browserWindows,0,300);
+        clickWithJSExecutor(browserWindows, 0, 300);
         return new BrowserWindowsPage(driver);
     }
 
@@ -30,7 +30,7 @@ public class SidePanel extends BasePage{
     WebElement selectMenu;
 
     public SelectMenuPage getSelectMenu() {
-        clickWithJSExecutor(selectMenu,0,600);
+        clickWithJSExecutor(selectMenu, 0, 600);
         return new SelectMenuPage(driver);
     }
 
@@ -38,7 +38,31 @@ public class SidePanel extends BasePage{
     WebElement practiceForm;
 
     public PracticeFormPage selectPracticeForm() {
-        clickWithJSExecutor(practiceForm,0,100);
+        clickWithJSExecutor(practiceForm, 0, 100);
         return new PracticeFormPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Frames']")
+    WebElement frames;
+
+    public FramesPage selectFrames() {
+        clickWithJSExecutor(frames, 0, 300);
+        return new FramesPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Nested Frames']")
+    WebElement nestedFrames;
+
+    public FramesPage selectNestedFrames() {
+        clickWithJSExecutor(nestedFrames, 0, 300);
+        return new FramesPage(driver);
+    }
+
+    @FindBy(xpath = "//span[.='Buttons']")
+    WebElement buttons;
+
+    public ButtonsPage selectButtons() {
+        clickWithJSExecutor(buttons,0,300);
+        return new ButtonsPage(driver);
     }
 }
