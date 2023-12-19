@@ -1,9 +1,9 @@
 package com.demoqa.pages;
 
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 public class PracticeFormPage extends BasePage{
 
@@ -130,6 +130,41 @@ public class PracticeFormPage extends BasePage{
         click(cityContainer);
         cityInput.sendKeys(city);
         cityInput.sendKeys(Keys.ENTER);
+        return this;
+    }
+
+    @FindBy(id = "submit")
+    WebElement submit;
+
+    public PracticeFormPage submit() {
+        clickWithRectangle(submit,2,3);
+        return this;
+    }
+
+    public void clickWithRectangle(WebElement element, int x, int y) {
+        Rectangle rectangle = element.getRect();
+
+        int xOffset = rectangle.getWidth() / x;
+        int yOffset = rectangle.getHeight() / y;
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+        actions.moveByOffset(-xOffset,-yOffset).click().perform();
+    }
+
+    @FindBy(css = ".react-datepicker__month-select")
+    WebElement monthContainer;
+
+    @FindBy(css = ".react-datepicker__year-select")
+    WebElement yearContainer;
+
+    public PracticeFormPage chooseDate(String month, String year, String day) {
+
+        clickWithJSExecutor(dateOfBirthInput,0,400);
+        new Select(monthContainer).selectByVisibleText(month);
+        new Select(yearContainer).selectByVisibleText(year);
+
+        driver.findElement(By.xpath("//div[@class='react-datepicker__week']//div[.='"+ day +"']")).click();
         return this;
     }
 }

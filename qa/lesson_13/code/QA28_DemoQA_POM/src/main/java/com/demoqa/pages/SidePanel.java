@@ -65,4 +65,11 @@ public class SidePanel extends BasePage {
         clickWithJSExecutor(buttons,0,300);
         return new ButtonsPage(driver);
     }
+    @FindBy(xpath = "//span[.='Text Box']")
+    WebElement textBox;
+    public TextBoxPage selectTextBox() {
+        click(textBox);
+        return new TextBoxPage(driver);
+    }
+
 }
