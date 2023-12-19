@@ -9,6 +9,10 @@
     "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/TextBoxTests.java",
     "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/TextBoxPage.java",
     "code/QA28_DemoQA_POM/src/test/resources/user.xml",
-    "code/QA28_DemoQA_POM/pom.xml"
+    "code/QA28_DemoQA_POM/pom.xml",
+    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/ButtonsTests.java",
+    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/ButtonsPage.java",
+    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/TextBoxTests.java",
+    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/TextBoxPage.java"
   ]
 }
