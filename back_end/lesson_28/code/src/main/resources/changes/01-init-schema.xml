@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- ChangeSet for Role -->
+    <changeSet id="1-create-role-table" author="IgorKlein">
+        <createTable tableName="role">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="tag-1-create-role-table" author="IgorKlein">
+        <tagDatabase tag="rollback-point-create-role-table"/>
+    </changeSet>
+
+    <!-- ChangeSet for User -->
+    <changeSet id="2-create-user-table" author="IgorKlein">
+        <createTable tableName="user">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="username" type="varchar(255)"/>
+            <column name="password" type="varchar(255)"/>
+            <column name="email" type="varchar(255)"/>
+            <column name="phone" type="varchar(255)"/>
+            <column name="role_id" type="int"/>
+            <column name="create_data" type="timestamp"/>
+            <column name="last_visit_data" type="timestamp"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_user_role"
+                                 baseTableName="user"
+                                 baseColumnNames="role_id"
+                                 referencedTableName="role"
+                                 referencedColumnNames="id" />
+    </changeSet>
+
+    <changeSet id="tag-2-create-user-table" author="IgorKlein">
+        <tagDatabase tag="rollback-point-create-user-table"/>
+    </changeSet>
+    <!-- ChangeSet for Category -->
+    <changeSet id="3-create-category-table" author="IgorKlein">
+        <createTable tableName="category">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="category_name" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- ChangeSet for Manufacturer -->
+    <changeSet id="4-create-manufacturer-table" author="IgorKlein">
+        <createTable tableName="manufacturer">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+            <column name="country" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- ChangeSet for Product -->
+    <changeSet id="5-create-product-table" author="IgorKlein">
+        <createTable tableName="product">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(255)"/>
+            <column name="description" type="varchar(255)"/>
+            <column name="category_id" type="int"/>
+            <column name="manufacturer_id" type="int"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_product_category"
+                                 baseTableName="product"
+                                 baseColumnNames="category_id"
+                                 referencedTableName="category"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint constraintName="fk_product_manufacturer"
+                                 baseTableName="product"
+                                 baseColumnNames="manufacturer_id"
+                                 referencedTableName="manufacturer"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <!-- ChangeSet for ProductInfo -->
+    <changeSet id="6-create-productinfo-table" author="IgorKlein">
+        <createTable tableName="product_info">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="product_id" type="int"/>
+            <column name="price" type="decimal(19,2)"/>
+            <column name="quantity" type="int"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_productinfo_product"
+                                 baseTableName="product_info"
+                                 baseColumnNames="product_id"
+                                 referencedTableName="product"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+
+    <!-- ChangeSet for Cart -->
+    <changeSet id="7-create-cart-table" author="IgorKlein">
+        <createTable tableName="cart">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="int"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_cart_user"
+                                 baseTableName="cart"
+                                 baseColumnNames="user_id"
+                                 referencedTableName="user"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <!-- ChangeSet for CartItem -->
+    <changeSet id="8-create-cartitem-table" author="IgorKlein">
+        <createTable tableName="cart_item">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="product_id" type="int"/>
+            <column name="quantity" type="int"/>
+            <column name="cart_id" type="int"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_cartitem_product"
+                                 baseTableName="cart_item"
+                                 baseColumnNames="product_id"
+                                 referencedTableName="product"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint constraintName="fk_cartitem_cart"
+                                 baseTableName="cart_item"
+                                 baseColumnNames="cart_id"
+                                 referencedTableName="cart"
+                                 referencedColumnNames="id"
+                                 onDelete="CASCADE"/>
+    </changeSet>
+
+    <!-- ChangeSet for PaymentStatus -->
+    <changeSet id="9-create-paymentstatus-table" author="IgorKlein">
+        <createTable tableName="payment_status">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="status" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- ChangeSet for PaymentMethod -->
+    <changeSet id="10-create-paymentmethod-table" author="IgorKlein">
+        <createTable tableName="payment_method">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="method" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- ChangeSet for OrderStatus -->
+    <changeSet id="11-create-orderstatus-table" author="IgorKlein">
+        <createTable tableName="order_status">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="status" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <!-- ChangeSet for Order -->
+    <changeSet id="12-create-order-table" author="IgorKlein">
+        <createTable tableName="zakaz">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="user_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="total_amount" type="decimal(19,2)"/>
+            <column name="order_status_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_method_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_status_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="create_data" type="timestamp"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_zakaz_user"
+                                 baseTableName="zakaz"
+                                 baseColumnNames="user_id"
+                                 referencedTableName="user"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint constraintName="fk_zakaz_order_status"
+                                 baseTableName="zakaz"
+                                 baseColumnNames="order_status_id"
+                                 referencedTableName="order_status"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint constraintName="fk_zakaz_payment_method"
+                                 baseTableName="zakaz"
+                                 baseColumnNames="payment_method_id"
+                                 referencedTableName="payment_method"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint constraintName="fk_zakaz_payment_status"
+                                 baseTableName="zakaz"
+                                 baseColumnNames="payment_status_id"
+                                 referencedTableName="payment_status"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <!-- ChangeSet for OrderItem -->
+    <changeSet id="13-create-orderitem-table" author="IgorKlein">
+        <createTable tableName="order_item">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="order_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="quantity" type="int"/>
+            <column name="price" type="decimal(19,2)"/>
+        </createTable>
+
+        <addForeignKeyConstraint constraintName="fk_orderitem_zakaz"
+                                 baseTableName="order_item"
+                                 baseColumnNames="order_id"
+                                 referencedTableName="zakaz"
+                                 referencedColumnNames="id"/>
+
+        <addForeignKeyConstraint constraintName="fk_orderitem_product"
+                                 baseTableName="order_item"
+                                 baseColumnNames="product_id"
+                                 referencedTableName="product"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="add-tag-initial-setup" author="IgorKlein">
+        <tagDatabase tag="initial-setup"/>
+    </changeSet>
+
+<!--    <changeSet id="rollback-product-table" author="author">-->
+<!--        <dropTable tableName="product" />-->
+<!--    </changeSet>-->
+
+<!--    liquibase rollback "rollback-point-create-role-table"-->
+
+</databaseChangeLog>

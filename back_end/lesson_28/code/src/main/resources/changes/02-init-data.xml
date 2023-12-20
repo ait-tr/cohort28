@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <!-- Insert initial data for Role -->
+    <changeSet id="1-insert-roles" author="IgorKlein" context="dev">
+        <insert tableName="role">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Admin"/>
+        </insert>
+        <insert tableName="role">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="User"/>
+        </insert>
+
+        <insert tableName="role">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Manager"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for User -->
+    <changeSet id="2-insert-users" author="IgorKlein" context="dev">
+        <insert tableName="user">
+            <column name="id" valueNumeric="1"/>
+            <column name="username" value="IgorAdmin"/>
+            <column name="password" value="qwerty007!"/>
+            <column name="email" value="admin@mail.com"/>
+            <column name="phone" value="1234567890"/>
+            <column name="role_id" valueNumeric="1"/>
+            <column name="create_data" valueDate="CURRENT_TIMESTAMP"/>
+            <column name="last_visit_data" valueDate="CURRENT_TIMESTAMP"/>
+        </insert>
+        <insert tableName="user">
+            <column name="id" valueNumeric="2"/>
+            <column name="username" value="AlexUser"/>
+            <column name="password" value="qwerty007!"/>
+            <column name="email" value="alex@mail.com"/>
+            <column name="phone" value="4321567890"/>
+            <column name="role_id" valueNumeric="2"/>
+            <column name="create_data" valueDate="CURRENT_TIMESTAMP"/>
+            <column name="last_visit_data" valueDate="CURRENT_TIMESTAMP"/>
+        </insert>
+        <insert tableName="user">
+            <column name="id" valueNumeric="3"/>
+            <column name="username" value="OlgaManager"/>
+            <column name="password" value="qwerty007!"/>
+            <column name="email" value="olga@mail.com"/>
+            <column name="phone" value="2233567890"/>
+            <column name="role_id" valueNumeric="3"/>
+            <column name="create_data" valueDate="CURRENT_TIMESTAMP"/>
+            <column name="last_visit_data" valueDate="CURRENT_TIMESTAMP"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for Category -->
+    <changeSet id="3-insert-categories" author="IgorKlein" context="dev">
+        <insert tableName="category">
+            <column name="id" valueNumeric="1"/>
+            <column name="category_name" value="Smartphones"/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" valueNumeric="2"/>
+            <column name="category_name" value="Tablets"/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" valueNumeric="3"/>
+            <column name="category_name" value="Computers"/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" valueNumeric="4"/>
+            <column name="category_name" value="Clothing"/>
+        </insert>
+        <insert tableName="category">
+            <column name="id" valueNumeric="5"/>
+            <column name="category_name" value="Shoes"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for Manufacturer -->
+    <changeSet id="4-insert-manufacturers" author="IgorKlein" context="dev">
+        <insert tableName="manufacturer">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Samsung Electronics"/>
+            <column name="country" value="South Korea"/>
+        </insert>
+        <insert tableName="manufacturer">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="Apple Inc."/>
+            <column name="country" value="USA"/>
+        </insert>
+        <insert tableName="manufacturer">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Nike"/>
+            <column name="country" value="USA"/>
+        </insert>
+        <insert tableName="manufacturer">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Calvin Klein"/>
+            <column name="country" value="China"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for Product -->
+    <changeSet id="5-insert-products" author="IgorKlein" context="dev">
+        <insert tableName="product">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="Galaxy S23"/>
+            <column name="description" value="Unlocked (Any Carrier) SmartPhone"/>
+            <column name="category_id" valueNumeric="2"/>
+            <column name="manufacturer_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="product">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="iPad"/>
+            <column name="description" value="7th Gen. 32GB, Wi-Fi, 10.2 in - Space Gray"/>
+            <column name="category_id" valueNumeric="1"/>
+            <column name="manufacturer_id" valueNumeric="1"/>
+        </insert>
+        <insert tableName="product">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="Men's Retro GTS 97"/>
+            <column name="description" value="Sneakers Shoes - Canvas Black White DA1446-001 - Size 8"/>
+            <column name="category_id" valueNumeric="5"/>
+            <column name="manufacturer_id" valueNumeric="3"/>
+        </insert>
+        <insert tableName="product">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="Sunglasses"/>
+            <column name="description" value="CK20121S-001 Women's Aviator"/>
+            <column name="category_id" valueNumeric="4"/>
+            <column name="manufacturer_id" valueNumeric="4"/>
+        </insert>
+        <insert tableName="product">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="iPhone 15"/>
+            <column name="description" value="Pro Max 5G 256 GB Titan Blau Dual SIM"/>
+            <column name="category_id" valueNumeric="1"/>
+            <column name="manufacturer_id" valueNumeric="2"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for ProductInfo -->
+    <changeSet id="6-insert-productinfo" author="IgorKlein" context="dev">
+        <insert tableName="product_info">
+            <column name="id" valueNumeric="1"/>
+            <column name="product_id" valueNumeric="1"/>
+            <column name="price" valueNumeric="750.00"/>
+            <column name="quantity" valueNumeric="10"/>
+        </insert>
+        <insert tableName="product_info">
+            <column name="id" valueNumeric="2"/>
+            <column name="product_id" valueNumeric="2"/>
+            <column name="price" valueNumeric="130.00"/>
+            <column name="quantity" valueNumeric="25"/>
+        </insert>
+        <insert tableName="product_info">
+            <column name="id" valueNumeric="3"/>
+            <column name="product_id" valueNumeric="3"/>
+            <column name="price" valueNumeric="36.43"/>
+            <column name="quantity" valueNumeric="6"/>
+        </insert>
+        <insert tableName="product_info">
+            <column name="id" valueNumeric="4"/>
+            <column name="product_id" valueNumeric="4"/>
+            <column name="price" valueNumeric="24.99"/>
+            <column name="quantity" valueNumeric="3"/>
+        </insert>
+        <insert tableName="product_info">
+            <column name="id" valueNumeric="5"/>
+            <column name="product_id" valueNumeric="5"/>
+            <column name="price" valueNumeric="1449.00"/>
+            <column name="quantity" valueNumeric="23"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for Cart -->
+    <changeSet id="7-insert-carts" author="IgorKlein" context="dev">
+        <insert tableName="cart">
+            <column name="id" valueNumeric="1"/>
+            <column name="user_id" valueNumeric="1"/>
+        </insert>
+        <insert tableName="cart">
+            <column name="id" valueNumeric="2"/>
+            <column name="user_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="cart">
+            <column name="id" valueNumeric="3"/>
+            <column name="user_id" valueNumeric="3"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for CartItem -->
+    <changeSet id="8-insert-cartitems" author="IgorKlein" context="dev">
+        <insert tableName="cart_item">
+            <column name="id" valueNumeric="1"/>
+            <column name="product_id" valueNumeric="4"/>
+            <column name="quantity" valueNumeric="2"/>
+            <column name="cart_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="cart_item">
+            <column name="id" valueNumeric="2"/>
+            <column name="product_id" valueNumeric="3"/>
+            <column name="quantity" valueNumeric="2"/>
+            <column name="cart_id" valueNumeric="2"/>
+        </insert>
+        <insert tableName="cart_item">
+            <column name="id" valueNumeric="3"/>
+            <column name="product_id" valueNumeric="1"/>
+            <column name="quantity" valueNumeric="1"/>
+            <column name="cart_id" valueNumeric="3"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for PaymentStatus -->
+    <changeSet id="9-insert-paymentstatuses" author="IgorKlein" context="dev">
+        <insert tableName="payment_status">
+            <column name="id" valueNumeric="1"/>
+            <column name="status" value="processed"/>
+        </insert>
+        <insert tableName="payment_status">
+            <column name="id" valueNumeric="2"/>
+            <column name="status" value="pending"/>
+        </insert>
+        <insert tableName="payment_status">
+            <column name="id" valueNumeric="3"/>
+            <column name="status" value="failed"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for PaymentMethod -->
+    <changeSet id="10-insert-paymentmethods" author="IgorKlein" context="dev">
+        <insert tableName="payment_method">
+            <column name="id" valueNumeric="1"/>
+            <column name="method" value="creditCard"/>
+        </insert>
+        <insert tableName="payment_method">
+            <column name="id" valueNumeric="2"/>
+            <column name="method" value="payPal"/>
+        </insert>
+        <insert tableName="payment_method">
+            <column name="id" valueNumeric="3"/>
+            <column name="method" value="Cash on delivery"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for OrderStatus -->
+    <changeSet id="11-insert-orderstatuses" author="IgorKlein" context="dev">
+        <insert tableName="order_status">
+            <column name="id" valueNumeric="1"/>
+            <column name="status" value="pending"/>
+        </insert>
+        <insert tableName="order_status">
+            <column name="id" valueNumeric="2"/>
+            <column name="status" value="shipped"/>
+        </insert>
+        <insert tableName="order_status">
+            <column name="id" valueNumeric="3"/>
+            <column name="status" value="processing"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for Order -->
+    <changeSet id="12-insert-orders" author="IgorKlein" context="dev">
+        <insert tableName="zakaz">
+            <column name="id" valueNumeric="1"/>
+            <column name="user_id" valueNumeric="2"/>
+            <column name="total_amount" valueNumeric="880.00"/>
+            <column name="order_status_id" valueNumeric="1"/>
+            <column name="payment_method_id" valueNumeric="1"/>
+            <column name="payment_status_id" valueNumeric="1"/>
+            <column name="create_data" valueDate="CURRENT_TIMESTAMP"/>
+        </insert>
+    </changeSet>
+
+    <!-- Insert initial data for OrderItem -->
+    <changeSet id="13-insert-orderitems" author="IgorKlein" context="dev">
+        <insert tableName="order_item">
+            <column name="id" valueNumeric="1"/>
+            <column name="order_id" valueNumeric="1"/>
+            <column name="product_id" valueNumeric="1"/>
+            <column name="quantity" valueNumeric="1"/>
+            <column name="price" valueNumeric="750.00"/>
+        </insert>
+        <insert tableName="order_item">
+            <column name="id" valueNumeric="2"/>
+            <column name="order_id" valueNumeric="1"/>
+            <column name="product_id" valueNumeric="2"/>
+            <column name="quantity" valueNumeric="1"/>
+            <column name="price" valueNumeric="130.00"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
+
