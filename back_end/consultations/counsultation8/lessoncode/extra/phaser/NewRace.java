@@ -1,4 +1,4 @@
-package lessons.lesson27.extra.phaser;
+package extra.phaser;
 
 
 import java.util.concurrent.Phaser;

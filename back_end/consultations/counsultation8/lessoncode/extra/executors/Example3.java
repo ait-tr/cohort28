@@ -1,4 +1,4 @@
-package lessons.lesson27.extra.executors;
+package extra.executors;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

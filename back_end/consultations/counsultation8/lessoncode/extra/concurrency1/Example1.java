@@ -1,4 +1,4 @@
-package lessons.lesson27.extra.concurrency1;
+package extra.concurrency1;
 
 // пример применения Semaphore в работе небольшого ресторана, в котором всего 5 столиков, но в людей, желающих
 // пообедать больше, чем свободных столов

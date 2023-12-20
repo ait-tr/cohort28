@@ -1,4 +1,4 @@
-package lessons.lesson27.extra.concurrency1;
+package extra.concurrency1;
 
 
 import java.util.concurrent.Semaphore;

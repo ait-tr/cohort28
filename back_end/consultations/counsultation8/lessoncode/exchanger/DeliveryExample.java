@@ -1,4 +1,4 @@
-package lessons.lesson27.exchanger;
+package exchanger;
 
 import java.util.List;
 import java.util.concurrent.Exchanger;

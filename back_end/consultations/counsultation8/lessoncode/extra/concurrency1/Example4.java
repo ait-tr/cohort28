@@ -1,4 +1,4 @@
-package lessons.lesson27.extra.concurrency1;
+package extra.concurrency1;
 
 // Задача из логистики, как выбрать наиболее оптимальный путь при доставке товаров
 //  A  _ _ _ _             _ _ _ _ B
