@@ -2,15 +2,14 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "code": [
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/HomePage.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/SidePanel.java",
-    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/SelectMenuTests.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/SelectMenuPage.java",
-    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/PracticeFormTests.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/PracticeFormPage.java",
-    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/IframeTests.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/FramesPage.java",
-    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/ButtonsTests.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/ButtonsPage.java"
+    "code/QA28_ilcarro_Cucumber/build.gradle",
+    "code/QA28_ilcarro_Cucumber/src/test/resources/features/navigate.feature",
+    "code/QA28_ilcarro_Cucumber/src/test/resources/features/login.feature",
+    "code/QA28_ilcarro_Cucumber/src/test/java/com/ilcarro/TestRunner.java",
+    "code/QA28_ilcarro_Cucumber/src/main/java/com/ilcarro/pages/BasePage.java",
+    "code/QA28_ilcarro_Cucumber/src/test/java/com/ilcarro/stepDefinitions/HomePageSteps.java",
+    "code/QA28_ilcarro_Cucumber/src/main/java/com/ilcarro/pages/HomePage.java",
+    "code/QA28_ilcarro_Cucumber/src/test/java/com/ilcarro/stepDefinitions/LoginSteps.java",
+    "code/QA28_ilcarro_Cucumber/src/main/java/com/ilcarro/pages/LoginPage.java"
   ]
 }
