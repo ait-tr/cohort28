@@ -3,16 +3,17 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/HomePage.java",
     "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/SidePanel.java",
+    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/SelectMenuTests.java",
+    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/SelectMenuPage.java",
     "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/PracticeFormTests.java",
     "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/PracticeFormPage.java",
-    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/TextBoxTests.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/TextBoxPage.java",
-    "code/QA28_DemoQA_POM/src/test/resources/user.xml",
-    "code/QA28_DemoQA_POM/pom.xml",
+    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/IframeTests.java",
+    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/FramesPage.java",
     "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/ButtonsTests.java",
     "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/ButtonsPage.java",
-    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/TextBoxTests.java",
-    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/TextBoxPage.java"
+    "code/QA28_DemoQA_POM/src/test/java/com/demoqa/tests/DragAndDropTests.java",
+    "code/QA28_DemoQA_POM/src/main/java/com/demoqa/pages/DroppablePage.java"
   ]
 }
