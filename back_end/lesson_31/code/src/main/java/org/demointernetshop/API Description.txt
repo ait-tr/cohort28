@@ -1,0 +1,366 @@
+ Работа с товарами:
+ - передать все товары:
+ Method: GET
+ URL: /products
+ Request:-
+ Response:
+ [
+     {
+        "id": 1,
+        "name": "iPhone 15",
+        "description": "iPhone 15 ....",
+        "category": { "id" : 1,
+                     "categoryName": "phones"}
+        "manufacturer": {"id" : 1,
+                        "name": "Apple",
+                        "country": "China"}
+        "productPrice": 1500,
+        "productQuantity": 24
+        }
+     },
+     {}
+ ]
+
+
+ - передать список категорий
+  Method: GET
+  URL: /products/category
+  Request: -
+  Response:
+   [
+       { "id" : 1,
+         "categoryName": "phones"},
+       {}
+   ]
+
+       Method: GET
+        URL: /products/category
+        @GetMapping(/products/category)
+        public List<CategoryDTO> getAllCategories()
+
+- передать список категорий с данными о максимальной и минимальной цене товаров в данной категории
+  Method: GET
+  URL: /products/category/{category_id}/price
+  Request: -
+
+         @GetMapping(/products/category/{category_id}/price)
+                public List<CategoryDTO> getCategoryPrices(@PathVariable("category_id") Integer categoryId)
+
+                Response:
+                   [
+                       {
+
+                         "categoryName": "phones",
+                         minPrice: 30,
+                         maxPrice: 4988
+                         },
+                       {}
+                   ]
+
+
+
+
+   - передать товары по категории
+   - передать товары по категории и диапазону цен
+
+     Method: GET
+     URL: /products/category/{category_id}?minPrice=9
+     @GetMapping(/products/category/{category_id})
+     public List<ProductDTO> getProducts=ByCategoryAndPrice(@PathVariable("category_id") Integer categoryId,
+                                                            @RequestParam(defaultValue = "0") Double minPrice,
+                                                            @RequestParam(defaultValue = "Double.MAX_VALUE") Double maxPrice)
+
+     Request: -
+     Response:
+      [
+          {
+                  "id": 1,
+                  "name": "iPhone 15",
+                  "description": "iPhone 15 ....",
+                  "category": { "id" : 1,
+                               "categoryName": "phones"}
+                  "manufacturer": {"id" : 1,
+                                  "name": "Apple",
+                                  "country": "China"}
+                  "productPrice": 1500,
+                  "productQuantity": 24
+                  },
+          {}
+      ]
+
+- передать список производителей
+  Method: GET
+  URL: /products/manufacturer
+  Request: -
+  Response:
+   [
+    {"id" : 1,
+     "name": "Apple",
+     "country": "China"},
+     {}
+   ]
+
+     Method: GET
+        URL: /products/manufacturer
+        @GetMapping(/products/manufacturer)
+        public List<ManufacturerDto> getManufacturers()
+
+
+
+ - передать товары по категории и по производителю
+ - передать товары по категории и по производителю и по цене
+  Method: GET
+  URL: /products/category_manufacturer_price
+
+       @GetMapping(/products/category/{category_id}/manufacturer/{manufacturer_id}/price)
+       public List<ProductDto> getProducts=ByCategoryAndPrice(@PathVariable("category_id") Integer categoryId,
+                                                                      @PathVariable("manufacturer_id") Integer manufacturerId,
+                                                                      @RequestParam(defaultValue = "0") Double minPrice,
+                                                                      @RequestParam(defaultValue = "Double.MAX_VALUE") Double maxPrice) {}
+
+  Request:
+  Response:
+ [
+          {
+                  "id": 1,
+                  "name": "iPhone 15",
+                  "description": "iPhone 15 ....",
+                  "category": { "id" : 1,
+                               "categoryName": "phones"}
+                  "manufacturer": {"id" : 1,
+                                  "name": "Apple",
+                                  "country": "China"}
+                  "productPrice": 1500,
+                  "productQuantity": 24
+                  },
+          {}
+      ]
+
+ - передать данные о количестве конкретного товара
+  Method: GET
+  URL: /products/product_quantity/{product_id}
+  Request:-
+  Response:
+ {
+    "quantity":
+ }
+
+      @GetMapping(/products/product_quantity/{product_id})
+        public ProductQuantityResponseDto getProductQuantity(@PathVariable("product_id") Integer productId)
+
+
+
+ - показать конкретный товар по id
+  Method: GET
+  URL: /products/product/{product_id}
+  Request:-
+      @GetMapping(/products/{product_id})
+        public ProductDto getProduct(@PathVariable("product_id") Integer productId)
+  Response:
+ {
+         "id": 1,
+         "name": "iPhone 15",
+         "description": "iPhone 15 ....",
+         "category": { "id" : 1,
+                      "categoryName": "phones"}
+         "manufacturer": {"id" : 1,
+                         "name": "Apple",
+                         "country": "China"}
+         "productPrice": 1500,
+         "productQuantity": 24
+         }
+
+         =========================================================================
+
+ Работа с пользователем:
+ - регистрация
+Method: POST
+URL: /users/registration
+Request:
+{
+    "username":"Igor123"
+    "password": "Qwerty007!"
+    "email": "user@mail.com"
+    "phone": "+1234567890"
+}
+    @PostMapping("api/users/register")
+    public UserDto register(UserRegistrationDto request) {
+        return userService.createUser(request);
+    }
+
+Response:
+{
+     "id": 1
+     "username": "Igor123"
+     "role": "admin"
+     "email": "user@mail.com"
+     "phone": "+1234567890"
+     "createData": "2023-12-01T15:30:45"
+     lastVisitData: "2023-12-01T15:30:45"
+
+}
+
+
+
+ - редактирование данных
+  Method: PUT
+  URL: /users/{user_id}
+  Request:
+  {
+      "username": "Igor123"
+      "email": "user@mail.com"
+      "phone": "+1234567890"
+      "password": "newPass"
+  }
+
+      @PutMapping("/api/users/{userId}")
+      public UserDto updateUser(UserUpdateDto request, Integer userId) {
+          return userService.updateUser(userId, request);
+      }
+
+
+ Response:
+ {
+   "id": 1
+   "username": "Igor123"
+   "role": "admin"
+   "email": "user@mail.com"
+   "phone": "+1234567890"
+ }
+
+
+ =========================================================================
+ Работа с заказами:
+ - показать информацию по корзине пользователя
+Method: GET
+URL: api/users/{user_id}/cart
+Request: -
+      @GetMapping(api/users/{user_id}/cart)
+        public CartDto getCart(@PathVariable("user_id") Integer userId)
+
+Response:
+{
+    "id": 12,
+    "userId": 12,
+    products: [
+                    {
+                        "id": 1,
+                        "name": "iPhone 15",
+                        "price": 150.50
+                        "quantity": 2,
+                    },
+                    {}
+               ]
+}
+
+
+ - внести изменения в корзину
+ Request:
+ {
+     "product_id": 12,
+     "count": 3
+ }
+ ???  Method: Put
+       @GetMapping(api/users/{user_id}/cart/change)
+         public CartDto getProduct(@RequestBody() CartChangeDto request)
+
+ Response:
+{
+    "id": ,
+    "userId": 1,
+    products: [
+                    {
+                        "id": 1,
+                        "name": "iPhone 15",
+                        "price": 150.50
+                        "quantity": 2
+                    },
+                    {}
+               ]
+}
+
+
+
+ - оформить заказ (т.е. сформировать заказ и перенести туда товары из корзины, очистить корзину,
+ внести изменения в количество товара на складе в зарезервированные)
+  Method: POST
+  Request:
+   {
+       "cartId": 22,
+       "userId": 22,
+       products: [
+                       {
+                           "id": 1,
+                           "price": 150.50
+                           "name": "iPhone 15"
+                           "quantity": 2
+                       },
+                       {}
+                  ]
+   }
+  URL: api/orders/{cart_id}
+     @PostMapping(api/orders/{cart_id})
+           public OrderDto createOrder(@RequestBody OrderRequestDto request)
+
+  Response:
+
+    {
+    "id": 1,
+    "user_id": 1
+    products: [
+                        {
+                            "id": 1,
+                            "name": "iPhone 15",
+                            "price": 150.50
+                            "quantity": 2
+                        },
+                        {}
+                   ]
+    "order_status": "delivered"
+    "payment_status": "paid",
+    "payment_method": "paypal",
+    "create_date": "2023-12-01T15:30:45"
+    },
+
+
+ - отмена заказа (по запросу пользователя)
+Method: Delete
+  URL: api/orders/{order_id}
+     @DeleteMapping(api/orders/{order_id})
+           public void deleteOrder(@PathVariable("order_id"))
+
+Response:-
+
+ - передать список всех заказов пользователя
+  Method: GET
+  URL: api/users/{user_id}/orders
+       @GetMapping(api/users/{user_id}/orders)
+             public List<OrderDto> getAllOrders(@PathVariable("user_id"))
+
+  Request: -
+  Response: [{OrderDto}, {OrderDto}]
+ - передать информацию о конкретном заказе
+   Method: GET
+   URL: api/orders/order_id
+        @GetMapping(api/orders/{order_id})
+              public OrderDto getOrderById(@PathVariable("order_id"))
+
+   Request: -
+   Response: OrderDto
+
+}
+
+
+Для ДЗ:
+1) создать orderRequestDTO
+2) создать cartRequestDTo
+3)
+
+{
+155
+} - из контроллера возврат просто Integer
+
+Но если вы хотите чтобы JSON был таким:
+{
+"fieldName" : 155}
+то необходимо чтобы контроллер возвращал объект который содержит поле "fieldName"

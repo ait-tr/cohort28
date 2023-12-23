@@ -1,0 +1,18 @@
+CREATE INDEX indexName On tableName (columnName);
+
+пример:
+
+CREATE INDEX idx_email ON user (email);
+
+
+В нашем приложении есть репозиторий в котором
+
+@Repository
+public interface CartRepository extends JpaRepository<Cart, Integer> {
+
+    @Query("SELECT c FROM Cart c JOIN FETCH c.cartItems ci JOIN FETCH ci.product WHERE c.user.id = :userId")
+    public Cart findByUserIdWithCartItems(Integer userId);
+
+}
+
+CREATE INDEX idx_user_id ON cart (user_id);
