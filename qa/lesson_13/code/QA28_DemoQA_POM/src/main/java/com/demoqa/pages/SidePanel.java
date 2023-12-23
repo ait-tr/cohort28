@@ -88,4 +88,12 @@ public class SidePanel extends BasePage {
         return new LinksPage(driver);
     }
 
+    @FindBy(xpath = "//span[.='Droppable']")
+    WebElement droppable;
+
+    public DroppablePage slelectDroppable() {
+        clickWithJSExecutor(droppable,0,500);
+        return new DroppablePage(driver);
+    }
+
 }
