@@ -1,0 +1,16 @@
+Список всех entity:
+
+1. Category
+2. Manufacturer
+3. Product
+4. ProductInfo
+5. User
+6. Role
+7. Cart
+8. CartItem
+9. Order
+10. OrderItem
+11. OrderStatus
+12. PaymentMethod
+13. PaymentStatus
+
