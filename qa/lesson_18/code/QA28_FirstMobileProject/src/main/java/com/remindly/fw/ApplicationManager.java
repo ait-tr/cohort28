@@ -40,4 +40,8 @@ public class ApplicationManager {
     public ReminderHelper getReminder() {
         return reminder;
     }
+
+    public void stop() {
+        driver.quit();
+    }
 }
